@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: software development | Riot Control]]></title>
+  <link href="http://www.riot-control.net/categories/software-development/atom.xml" rel="self"/>
+  <link href="http://www.riot-control.net/"/>
+  <updated>2013-11-26T13:50:42+00:00</updated>
+  <id>http://www.riot-control.net/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Architecture: The Lost Years]]></title>
+    <link href="http://www.riot-control.net/2013/10/11/architecture-the-lost-years/"/>
+    <updated>2013-10-11T13:47:00+01:00</updated>
+    <id>http://www.riot-control.net/2013/10/11/architecture-the-lost-years</id>
+    <content type="html"><![CDATA[<p>
+<div class="ratio-4-3 embed-video-container" onclick="var myAnchor = document.getElementById('WpkDN78P884');var tmpDiv = document.createElement('div');tmpDiv.innerHTML = '&lt;iframe style=&quot;vertical-align:top;width:100%;height:100%;position:absolute;&quot; src=&quot;http://www.youtube.com/embed/WpkDN78P884?autoplay=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;';myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);return false;" title="click here to play">
+<a class="youtube-lazy-link" style="width:100%;height:100%;background:#000 url(http://i2.ytimg.com/vi/WpkDN78P884/0.jpg) center center no-repeat;background-size:contain;position:absolute" href="http://www.youtube.com/watch?v=WpkDN78P884" id="WpkDN78P884" onclick="return false;">
+<div class="youtube-lazy-link-div"></div>
+<div class="youtube-lazy-link-info">Ruby Midwest 2011 - Keynote: Architecture the Lost Years by Robert Martin</div>
+</a>
+<div class="video-info" >Robert C. Martin (Uncle Bob) has been a software professional since 1970. In the last 40 years, he has worked in various capacities on literally hundreds of software projects. He has authored "landmark" books on Agile Programming, Extreme Programming, UML, Object-Oriented Programming, C++ Programming and Clean Code. He has published dozens of articles in various trade journals. Today, he is one of the software industry's leading authorities on Agile software development and is a regular speaker at international conferences and trade shows. He is a former editor of the C++ Report and writes regular blogs at http://cleancoder.posterous.com/.</div>
+</div>
+
+</p>
+]]></content>
+  </entry>
+  
+</feed>
