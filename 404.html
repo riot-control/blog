@@ -31,6 +31,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-45179678-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -74,12 +86,12 @@
     var arrURL = document.URL.split("/");
     var arrParams = arrURL[3].split("?");
     var searchParam = arrParams[0].substr(0, arrParams[0].lastIndexOf("."));
-    
+
     document.write('<a href="http://google.com/search?q=site:www.riot-control.net ' + searchParam + '">search</a>')
   </script>
   <noscript><a href="http://google.com/search?q=site%3Awww.riot-control.net">search</a></noscript>
   box (top right corner), browse the
-  <a href="/blog/archives">archives</a> or go to the
+  <a href="/archives">archives</a> or go to the
   <a href="/">frontpage</a>.
 </p>
 
