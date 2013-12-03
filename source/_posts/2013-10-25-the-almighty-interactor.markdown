@@ -14,6 +14,8 @@ I have only acknowledged it when I saw [Arquitecthure: the lost years](/2013/10/
 
 The concept is very simple. An interactor is:
 
+<!-- more -->
+
 * A class that handles business logic
 * It solves only one problem
 * It has a name in the form of an action: CreatePost, SendEmail, FinalizeDocument
