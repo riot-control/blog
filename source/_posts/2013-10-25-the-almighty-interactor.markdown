@@ -1,8 +1,9 @@
 ---
 layout: post
+published: true
 title: "The almighty interactor"
 author: donbonifacio
-date: 2013-10-25 13:21
+date: 2013-12-03 13:21
 comments: true
 categories: [software development]
 ---
