@@ -4,7 +4,7 @@
   <title><![CDATA[Category: software development | Riot Control]]></title>
   <link href="http://www.riot-control.net/categories/software-development/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2013-12-03T13:52:33+00:00</updated>
+  <updated>2013-12-03T13:57:32+00:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -23,6 +23,9 @@ evolution as a programmer. It&rsquo;s simple, and it has always been right besid
 I have only acknowledged it when I saw <a href="/2013/10/11/architecture-the-lost-years/">Arquitecthure: the lost years</a>.</p>
 
 <p>The concept is very simple. An interactor is:</p>
+
+<!-- more -->
+
 
 <ul>
 <li>A class that handles business logic</li>
