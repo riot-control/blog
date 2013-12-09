@@ -4,7 +4,7 @@
   <title><![CDATA[Riot Control]]></title>
   <link href="http://www.riot-control.net/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2013-12-03T14:02:15+00:00</updated>
+  <updated>2013-12-09T10:33:07+00:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why Work Doesn't Happen at Work]]></title>
+    <link href="http://www.riot-control.net/2013/12/09/why-work-doesnt-happen-at-work/"/>
+    <updated>2013-12-09T12:11:00+00:00</updated>
+    <id>http://www.riot-control.net/2013/12/09/why-work-doesnt-happen-at-work</id>
+    <content type="html"><![CDATA[<p>Most people still think that the office is the best place to get work done. They think that a bunch of people need to be in the same room for great things to happen. Well, let me tell you that the office is full of distractions. In this short video, Jason Fried will tell you why work doesn’t happen at work. I guarantee you that these will be the best 15 minutes of your day. Enjoy!</p>
+
+<div class="ratio-4-3 embed-video-container" onclick="var myAnchor = document.getElementById('5XD2kNopsUs');var tmpDiv = document.createElement('div');tmpDiv.innerHTML = '&lt;iframe style=&quot;vertical-align:top;width:100%;height:100%;position:absolute;&quot; src=&quot;http://www.youtube.com/embed/5XD2kNopsUs?autoplay=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;';myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);return false;" title="click here to play">
+<a class="youtube-lazy-link" style="width:100%;height:100%;background:#000 url(http://i2.ytimg.com/vi/5XD2kNopsUs/0.jpg) center center no-repeat;background-size:contain;position:absolute" href="http://www.youtube.com/watch?v=5XD2kNopsUs" id="5XD2kNopsUs" onclick="return false;">
+<div class="youtube-lazy-link-div"></div>
+<div class="youtube-lazy-link-info">Jason Fried: Why work doesn&#8217;t happen at work</div>
+</a>
+<div class="video-info" >http://www.ted.com Jason Fried has a radical theory of working: that the office isn&#8217;t a good place to do it. At TEDxMidwest he lays out the main problems (call them the M&Ms) and offers three suggestions to make work work.
+
+TEDTalks is a daily video podcast of the best talks and performances from the TED Conference, where the world&#8217;s leading thinkers and doers give the talk of their lives in 18 minutes. Featured speakers have included Al Gore on climate change, Philippe Starck on design, Jill Bolte Taylor on observing her own stroke, Nicholas Negroponte on One Laptop per Child, Jane Goodall on chimpanzees, Bill Gates on malaria and mosquitoes, Pattie Maes on the &#8220;Sixth Sense&#8221; wearable tech, and &#8220;Lost&#8221; producer JJ Abrams on the allure of mystery. TED stands for Technology, Entertainment, Design, and TEDTalks cover these topics as well as science, business, development and the arts. Closed captions and translated subtitles in a variety of languages are now available on TED.com, at http://www.ted.com/translate. Watch a highlight reel of the Top 10 TEDTalks at http://www.ted.com/index.php/talks/top10</div>
+</div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The almighty interactor]]></title>
