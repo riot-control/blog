@@ -20,7 +20,7 @@ fully to another location on the same project, and performing some changes.
  won't need to be changed (hopefully :).
 
  When we copy paste large portions of code, we are creating a maintenance hell.
- No longer will we be able to change something on just one place. We'll have to find
+ No longer will we be able to change something in just one place. We'll have to find
  all related places to change that. And guess what? We will always miss the majority
  of them.
 
