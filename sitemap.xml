@@ -2,36 +2,40 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://www.riot-control.net/2013/10/11/architecture-the-lost-years/</loc>
-        <lastmod>2013-11-27T13:37:23+00:00</lastmod>
+        <lastmod>2013-11-26T13:24:23+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://www.riot-control.net/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/
         </loc>
-        <lastmod>2013-12-03T14:35:47+00:00</lastmod>
+        <lastmod>2013-12-03T13:52:09+00:00</lastmod>
     </url>
     <url>
         <loc>http://www.riot-control.net/2013/12/03/the-almighty-interactor/</loc>
-        <lastmod>2013-12-03T14:35:47+00:00</lastmod>
+        <lastmod>2013-12-03T13:56:17+00:00</lastmod>
     </url>
     <url>
         <loc>http://www.riot-control.net/2013/12/09/why-work-doesnt-happen-at-work/</loc>
-        <lastmod>2013-12-09T10:32:34+00:00</lastmod>
+        <lastmod>2013-12-18T14:21:22+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.riot-control.net/2013/12/18/development-by-copy-paste/</loc>
+        <lastmod>2013-12-19T14:12:52+00:00</lastmod>
     </url>
     <url>
         <loc>http://www.riot-control.net/404.html</loc>
-        <lastmod>2013-11-27T13:37:23+00:00</lastmod>
+        <lastmod>2013-11-27T14:05:01+00:00</lastmod>
     </url>
     <url>
         <loc>http://www.riot-control.net/about/</loc>
-        <lastmod>2013-12-09T10:32:34+00:00</lastmod>
+        <lastmod>2013-12-19T14:12:52+00:00</lastmod>
     </url>
     <url>
         <loc>http://www.riot-control.net/archives/</loc>
-        <lastmod>2013-12-09T10:32:34+00:00</lastmod>
+        <lastmod>2013-12-19T14:12:52+00:00</lastmod>
     </url>
     <url>
         <loc>http://www.riot-control.net/</loc>
-        <lastmod>2013-12-09T10:32:34+00:00</lastmod>
+        <lastmod>2013-12-19T14:12:52+00:00</lastmod>
     </url>
 </urlset>

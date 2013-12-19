@@ -4,7 +4,7 @@
   <title><![CDATA[Category: software development | Riot Control]]></title>
   <link href="http://www.riot-control.net/categories/software-development/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2013-12-09T10:33:07+00:00</updated>
+  <updated>2013-12-19T14:13:09+00:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Development by copy paste]]></title>
+    <link href="http://www.riot-control.net/2013/12/18/development-by-copy-paste/"/>
+    <updated>2013-12-18T13:21:00+00:00</updated>
+    <id>http://www.riot-control.net/2013/12/18/development-by-copy-paste</id>
+    <content type="html"><![CDATA[<p>I believe that <em>development by copy paste</em> is the worst work process that a programmer
+may have. I&rsquo;m talking about having a piece of software working, and copying it
+fully to another location on the same project, and performing some changes.</p>
+
+<!-- more -->
+
+
+<p> I may write some poor code if I&rsquo;m tired or in a rush. My compromise is that a
+ piece of code may be poorly written, but there is only one point of access. It
+ may be refactored later and unit tested later. And all the code that uses the bad one
+ won&rsquo;t need to be changed (hopefully :).</p>
+
+<p> When we copy paste large portions of code, we are creating a maintenance hell.
+ No longer will we be able to change something in just one place. We&rsquo;ll have to find
+ all related places to change that. And guess what? We will always miss the majority
+ of them.</p>
+
+<p>Some may argue that using this process is faster. I disagree. And I hope I&rsquo;ll never
+have to support code from these guys.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The almighty interactor]]></title>
