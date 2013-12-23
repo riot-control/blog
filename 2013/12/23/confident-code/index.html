@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Development by copy paste - Riot Control</title>
+  <title>Confident code - Riot Control</title>
   <meta name="author" content="">
 
   
-  <meta name="description" content="I believe that development by copy paste is the worst work process that a programmer
-may have. I&rsquo;m talking about having a piece of software &hellip;">
+  <meta name="description" content="In Paulo&rsquo;s post about presenters and views,
+he talked about how to make the view free of business logic. This is
+confident coding. The &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@ may have. I&rsquo;m talking about having a piece of software &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.riot-control.net/2013/12/18/development-by-copy-paste">
+  <link rel="canonical" href="http://www.riot-control.net/2013/12/23/confident-code">
   <link href="/favicon.ico" rel="icon">
   
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -77,7 +78,7 @@ may have. I&rsquo;m talking about having a piece of software &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Development by Copy Paste</h1>
+      <h1 class="entry-title">Confident Code</h1>
     
     
       <p class="meta">
@@ -93,32 +94,28 @@ may have. I&rsquo;m talking about having a piece of software &hellip;">
   
 
 
-<time datetime="2013-12-18T13:21:00+00:00" pubdate data-updated="true">Dec 18<span>th</span>, 2013</time>
+<time datetime="2013-12-23T13:47:00+00:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I believe that <em>development by copy paste</em> is the worst work process that a programmer
-may have. I&rsquo;m talking about having a piece of software working, and copying it
-fully to another location on the same project, and performing some changes.</p>
+<div class="entry-content"><p>In Paulo&rsquo;s post about <a href="/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters and views</a>,
+he talked about how to make the view free of business logic. This is
+<em>confident coding</em>. The following <em>talk</em> shows this in a wider perspective. Not
+only for views/presenters, but for all code.</p>
 
-<!-- more -->
+<div class="ratio-4-3 embed-video-container" onclick="var myAnchor = document.getElementById('T8J0j2xJFgQ');var tmpDiv = document.createElement('div');tmpDiv.innerHTML = '&lt;iframe style=&quot;vertical-align:top;width:100%;height:100%;position:absolute;&quot; src=&quot;http://www.youtube.com/embed/T8J0j2xJFgQ?autoplay=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;';myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);return false;" title="click here to play">
+<a class="youtube-lazy-link" style="width:100%;height:100%;background:#000 url(http://i2.ytimg.com/vi/T8J0j2xJFgQ/0.jpg) center center no-repeat;background-size:contain;position:absolute" href="http://www.youtube.com/watch?v=T8J0j2xJFgQ" id="T8J0j2xJFgQ" onclick="return false;">
+<div class="youtube-lazy-link-div"></div>
+<div class="youtube-lazy-link-info">Ruby Midwest 2011 Confident Code by Avdi Grimm</div>
+</a>
+<div class="video-info" >Are your methods timid? Do they constantly second-guess themselves, checking for nil values, errors, and unexpected input? Even the cleanest Ruby codebases can become littered over time with nil checks, error handling, and other interruptions which steal attention away from the essential purpose of the code. This talk will discuss strategies for writing your Ruby classes and methods in a confident, straightforward style; without sacrificing functionality or robustness. In the process, we&#8217;ll cover concepts and techniques points including: The narrative style of method construction The four parts of a method Three strategies for dealing with uncertain input Massaging input with coercion and the Decorator pattern Lightweight preconditions Exterminating nils from your code The chaining and iterative styles of method construction Eliminating conditionals with the Special Case and Null Object patterns Isolating errors with the Bouncer and Checked Method patterns</div>
+</div>
 
 
-<p> I may write some poor code if I&rsquo;m tired or in a rush. My compromise is that a
- piece of code may be poorly written, but there is only one point of access. It
- may be refactored later and unit tested later. And all the code that uses the bad one
- won&rsquo;t need to be changed (hopefully :).</p>
 
-<p> When we copy paste large portions of code, we are creating a maintenance hell.
- No longer will we be able to change something in just one place. We&rsquo;ll have to find
- all related places to change that. And guess what? We will always miss the majority
- of them.</p>
-
-<p>Some may argue that using this process is faster. I disagree. And I hope I&rsquo;ll never
-have to support code from these guys.</p>
 </div>
 
 
@@ -141,7 +138,7 @@ have to support code from these guys.</p>
   
 
 
-<time datetime="2013-12-18T13:21:00+00:00" pubdate data-updated="true">Dec 18<span>th</span>, 2013</time>
+<time datetime="2013-12-23T13:47:00+00:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2013</time>
       
 
 <span class="categories">
@@ -155,7 +152,7 @@ have to support code from these guys.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.riot-control.net/2013/12/18/development-by-copy-paste/" data-via="" data-counturl="http://www.riot-control.net/2013/12/18/development-by-copy-paste/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.riot-control.net/2013/12/23/confident-code/" data-via="" data-counturl="http://www.riot-control.net/2013/12/23/confident-code/" >Tweet</a>
   
   
   
@@ -164,10 +161,8 @@ have to support code from these guys.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/2013/12/09/why-work-doesnt-happen-at-work/" title="Previous Post: Why Work Doesn't Happen at Work">&laquo; Why Work Doesn't Happen at Work</a>
+        <a class="basic-alignment left" href="/2013/12/18/development-by-copy-paste/" title="Previous Post: Development by copy paste">&laquo; Development by copy paste</a>
       
-      
-        <a class="basic-alignment right" href="/2013/12/23/confident-code/" title="next Post: Confident code">Confident code &raquo;</a>
       
     </p>
   </footer>
@@ -197,8 +192,8 @@ have to support code from these guys.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://www.riot-control.net/2013/12/18/development-by-copy-paste/';
-        var disqus_url = 'http://www.riot-control.net/2013/12/18/development-by-copy-paste/';
+        var disqus_identifier = 'http://www.riot-control.net/2013/12/23/confident-code/';
+        var disqus_url = 'http://www.riot-control.net/2013/12/23/confident-code/';
         var disqus_script = 'embed.js';
       
     (function () {
