@@ -1,6 +1,6 @@
 ---
 layout: post
-author: quimrstorres
+author: donbonifacio
 title: "Confident code"
 date: 2013-12-23 13:47
 comments: true
