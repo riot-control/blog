@@ -1,11 +1,12 @@
 ---
 layout: post
+published: true
 author: donbonifacio
 title: "Objects on Rails Book"
 date: 2013-12-27 13:47
 comments: true
-categories: books, [software development]
-tags: ruby
+categories: [software development]
+tags: ruby, books
 ----
 
 Some time ago our team started to write code differently. Inspired by [Architecture: The Lost Years](/2013/10/11/architecture-the-lost-years/),
