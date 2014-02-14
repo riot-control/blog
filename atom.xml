@@ -4,7 +4,7 @@
   <title><![CDATA[Riot Control]]></title>
   <link href="http://www.riot-control.net/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2013-12-23T17:20:10+00:00</updated>
+  <updated>2014-02-14T14:43:38+00:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,87 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Objects On Rails]]></title>
+    <link href="http://www.riot-control.net/2013/12/26/objects-on-rails/"/>
+    <updated>2013-12-26T00:00:00+00:00</updated>
+    <id>http://www.riot-control.net/2013/12/26/objects-on-rails</id>
+    <content type="html"><![CDATA[<hr />
+
+<p>layout: post
+author: donbonifacio
+title: &ldquo;Objects on Rails Book&rdquo;
+date: 2013-12-27 13:47
+comments: true
+categories: books, [software development]</p>
+
+<h2>tags: ruby</h2>
+
+<p>Some time ago our team started to write code differently. Inspired by <a href="http://www.riot-control.net/2013/10/11/architecture-the-lost-years/">Architecture: The Lost Years</a>,
+we started using <a href="http://www.riot-control.net/2013/12/03/the-almighty-interactor/">interactors</a> and <a href="http://www.riot-control.net/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters</a>, greatly improving our code base.
+We also started writting <em>rails-free</em> unit tests. It&rsquo;s good to know that <a href="http://devblog.reverb.com/post/70344683203/5-architecture-anti-patterns-and-solutions-for-large">we are not alone on this process</a>.
+The <a href="http://objectsonrails.com/">Objects on Rails book</a> shows a step by step process to build this kind of code.</p>
+
+<!-- more -->
+
+
+<p>I really loved this book. It&rsquo;s more on the rails side than I would like, but it
+still provided an enourmous amount of insights on application development. It&rsquo;s
+also very <em>ruby intensive</em>, and I confess that I prefer code without deep ruby tricks.</p>
+
+<p>I&rsquo;m awalys saying that I don&rsquo;t like to use constants in code. I always like an
+abstraction on top of constants. Imagine that you have:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">PER_PAGE</span> <span class="o">=</span> <span class="mi">10</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And you use the <em>PER_PAGE</em> all over the place. Now if you need to have logic on
+<em>per page</em>, for example, depending on the current user, you&rsquo;ll have to change it
+all over the place. That&rsquo;s why I always do:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">per_page</span>
+</span><span class='line'>  <span class="mi">10</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Objects on Rails made me think about this on a wider scope. This is a code smell:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">doc</span> <span class="o">=</span> <span class="no">Document</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I we have this code all over the place, what happens if we need to inject some
+logic on that find? An alternative:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">find_document</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">finder</span><span class="o">=</span><span class="no">Document</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">finder</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">doc</span> <span class="o">=</span> <span class="n">find_document</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This makes the code so much better for so many different reasons&hellip; The author
+goes on step further and makes all ActiveRecord interface private on the models,
+forcing you to write better code.</p>
+
+<p>You can read the book online for free or spend 5$ and have it digital. It&rsquo;s a must
+read!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Confident code]]></title>
