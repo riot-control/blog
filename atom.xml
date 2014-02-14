@@ -4,7 +4,7 @@
   <title><![CDATA[Riot Control]]></title>
   <link href="http://www.riot-control.net/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-02-14T14:50:54+00:00</updated>
+  <updated>2014-02-14T14:52:29+00:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -14,23 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Objects On Rails]]></title>
-    <link href="http://www.riot-control.net/2013/12/26/objects-on-rails/"/>
-    <updated>2013-12-26T00:00:00+00:00</updated>
-    <id>http://www.riot-control.net/2013/12/26/objects-on-rails</id>
-    <content type="html"><![CDATA[<hr />
-
-<p>layout: post
-published: true
-author: donbonifacio
-title: &ldquo;Objects on Rails Book&rdquo;
-date: 2014-02-14 13:47
-comments: true
-categories: books, [software development]</p>
-
-<h2>tags: ruby</h2>
-
-<p>Some time ago our team started to write code differently. Inspired by <a href="http://www.riot-control.net/2013/10/11/architecture-the-lost-years/">Architecture: The Lost Years</a>,
+    <title type="html"><![CDATA[Objects on Rails Book]]></title>
+    <link href="http://www.riot-control.net/2014/02/14/objects-on-rails/"/>
+    <updated>2014-02-14T13:47:00+00:00</updated>
+    <id>http://www.riot-control.net/2014/02/14/objects-on-rails</id>
+    <content type="html"><![CDATA[<p>Some time ago our team started to write code differently. Inspired by <a href="http://www.riot-control.net/2013/10/11/architecture-the-lost-years/">Architecture: The Lost Years</a>,
 we started using <a href="http://www.riot-control.net/2013/12/03/the-almighty-interactor/">interactors</a> and <a href="http://www.riot-control.net/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters</a>, greatly improving our code base.
 We also started writting <em>rails-free</em> unit tests. It&rsquo;s good to know that <a href="http://devblog.reverb.com/post/70344683203/5-architecture-anti-patterns-and-solutions-for-large">we are not alone on this process</a>.
 The <a href="http://objectsonrails.com/">Objects on Rails book</a> shows a step by step process to build this kind of code.</p>
