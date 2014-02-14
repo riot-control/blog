@@ -7,7 +7,7 @@ date: 2014-02-14 13:47
 comments: true
 categories:
 - books
-- [software development]
+- software development
 tags: ruby
 ---
 
