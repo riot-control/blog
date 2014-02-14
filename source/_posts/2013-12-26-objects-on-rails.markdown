@@ -7,7 +7,7 @@ date: 2014-02-14 13:47
 comments: true
 categories: books, [software development]
 tags: ruby
-----
+---
 
 Some time ago our team started to write code differently. Inspired by [Architecture: The Lost Years](/2013/10/11/architecture-the-lost-years/),
 we started using [interactors](/2013/12/03/the-almighty-interactor/) and [presenters](/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/), greatly improving our code base.
