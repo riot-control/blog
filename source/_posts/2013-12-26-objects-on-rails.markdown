@@ -5,8 +5,8 @@ author: donbonifacio
 title: "Objects on Rails Book"
 date: 2014-02-14 13:47
 comments: true
-categories: [software development]
-tags: ruby, books
+categories: books, [software development]
+tags: ruby
 ----
 
 Some time ago our team started to write code differently. Inspired by [Architecture: The Lost Years](/2013/10/11/architecture-the-lost-years/),
