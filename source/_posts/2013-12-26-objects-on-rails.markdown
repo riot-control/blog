@@ -5,7 +5,9 @@ author: donbonifacio
 title: "Objects on Rails Book"
 date: 2014-02-14 13:47
 comments: true
-categories: books, [software development]
+categories:
+- books
+- [software development]
 tags: ruby
 ---
 
