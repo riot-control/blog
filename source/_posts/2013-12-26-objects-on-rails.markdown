@@ -3,7 +3,7 @@ layout: post
 published: true
 author: donbonifacio
 title: "Objects on Rails Book"
-date: 2013-12-27 13:47
+date: 2014-02-14 13:47
 comments: true
 categories: [software development]
 tags: ruby, books
