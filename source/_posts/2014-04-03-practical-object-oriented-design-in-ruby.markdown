@@ -15,9 +15,7 @@ This is one of my favorite Ruby books ever. It is very well written and a joy to
 
 So, why is software design so important?
 
-When starting a new software application you have certain requirments. You analise these requirments, build your software and it works. Unfortunately, those requirments will change and you will need to refactor your code. If you have a good design architecture, with loosely coupled classes, refactoring your code to meet the new requirments will be smooth. Otherwise, it will be very hard to make changes and you will feel the pain.
-
-Every software application will need to change sooner or later. Having this in mind, you should care about your applications's design early on.
+When starting a new software application you have certain requirements. You analise these requirements, build your software and it works. As time goes by, those requirements will change and you will need to refactor your code. If you have a good design architecture, with loosely coupled classes, refactoring your code to meet the new requirements is easy. Otherwise, it will be very hard to make changes and it will be painful.
 
 
 <!-- more -->
