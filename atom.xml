@@ -4,7 +4,7 @@
   <title><![CDATA[Riot Control]]></title>
   <link href="http://www.riot-control.net/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-04-03T16:43:40+01:00</updated>
+  <updated>2014-04-03T16:47:10+01:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -20,7 +20,7 @@
     <id>http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby</id>
     <content type="html"><![CDATA[<p>Pratical Object-Oriented Design in Ruby by Sandi Metz</p>
 
-<p><img src="http://www.riot-control.net/blog/images/poodr.jpeg" height="300px" width="200px"/></p>
+<p><img src="http://www.riot-control.net/images/poodr.jpeg" height="300px" width="200px"/></p>
 
 <p>This is one of my favorite Ruby books ever. It is very well written and a joy to read. I highly recommend this book.</p>
 
