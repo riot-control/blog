@@ -9,7 +9,7 @@ categories: [software design]
 
 Pratical Object-Oriented Design in Ruby by Sandi Metz
 
-<img src="{{ root_url }}/blog/images/poodr.jpeg" height="300px" width="200px"/>
+<img src="{{ root_url }}/images/poodr.jpeg" height="300px" width="200px"/>
 
 This is one of my favorite Ruby books ever. It is very well written and a joy to read. I highly recommend this book.
 
