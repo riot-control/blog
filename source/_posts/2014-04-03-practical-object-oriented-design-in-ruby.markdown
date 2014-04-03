@@ -23,7 +23,7 @@ Every software application will need to change sooner or later. Having this in m
 <!-- more -->
 
 
-Software applications that are easy to change should have these qualities:
+Software applications that are easy to change have these qualities:
 
 * **Transparent** - The consequences of change should be obvious in the code that is changing and in distant code that relies upon it.
 
@@ -35,6 +35,6 @@ Software applications that are easy to change should have these qualities:
 these qualities.
 
 
-Another important aspect is to have tests. You can only refactor your code with confidence if you have tests. They also reduce the cost of maintaining your application and supply documentation.
+Tests are another important aspect of well designed software. You can only refactor your code with confidence if you have tests. They also reduce the cost of maintaining your application and they supply documentation.
 
 "An understanding of object-oriented design, good refactoring skills, and the ability to write efficient tests form a three-legged stool upon which changeable code rests. Well-designed code is easy to change, refactoring is how you change from one design to the next, and tests free you to refactor with impunity." - Sandi Metz
