@@ -18,8 +18,8 @@ day you'll make sure all the other co-workers know about this.
 *Number two:* Or you may forfeit the final. You know that the final is lost, and all you can do
 is continue and try to finish in style. You are sad because you lost the final on
 the count of this error. But you focus on holding your co-worker safe, making him
-overcome this. You start to think on how to talk to him about this, and focus on
-what you can do to never again have this hapenning.
+overcome this. You start to think on how to talk to him about this, and focus on what you can do to
+avoid something like this in the future.
 
 I make a lot of mistakes. Sometimes I may do things that other co-workers condemn.
 I do try to make my best, every day. So please, if I let you down, please be
