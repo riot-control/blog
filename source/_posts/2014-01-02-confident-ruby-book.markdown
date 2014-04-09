@@ -23,4 +23,4 @@ obj.present?
 obj.nil?
 ```
 
-Should be avoided. The book provides several examples for several ocasions.
+Should be avoided. The book provides several examples for several examples for many use cases.
