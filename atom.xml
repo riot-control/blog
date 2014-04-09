@@ -4,7 +4,7 @@
   <title><![CDATA[Riot Control]]></title>
   <link href="http://www.riot-control.net/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-04-03T16:47:10+01:00</updated>
+  <updated>2014-04-09T11:26:27+01:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Spotify culture]]></title>
+    <link href="http://www.riot-control.net/2014/04/09/spotify-culture/"/>
+    <updated>2014-04-09T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/09/spotify-culture</id>
+    <content type="html"><![CDATA[Culture matters. We try hard to have a good culture on our team, a culture
+of quality, helping each other, learning and having fun. This video from
+Spotify is a great showcase of a good culture. But the most important thing isn&#8217;t
+their culture, it&#8217;s the continuous effort to improve it.
+
+<iframe src="http://www.riot-control.net//player.vimeo.com/video/85490944?byline=0" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/85490944">Spotify Engineering Culture - part 1</a> from <a href="http://vimeo.com/user14023874">Spotify Training &amp; Development</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Practical Object-Oriented Design in Ruby]]></title>
