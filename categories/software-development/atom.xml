@@ -4,7 +4,7 @@
   <title><![CDATA[Category: software development | Riot Control]]></title>
   <link href="http://www.riot-control.net/categories/software-development/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-04-09T11:26:27+01:00</updated>
+  <updated>2014-04-10T10:08:15+01:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Pure functions]]></title>
+    <link href="http://www.riot-control.net/2014/04/10/pure-functions/"/>
+    <updated>2014-04-10T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/10/pure-functions</id>
+    <content type="html"><![CDATA[<p>While learning scala/clojure and functional programming I have come across a
+very familiar concept: <a href="http://en.wikipedia.org/wiki/Pure_function">pure functions</a>.
+It reminds me of an <a href="/2013/12/03/the-almighty-interactor/">interactor</a>, but I
+feel that is much more valuable as a concept. The <em>wikipedia</em> says that a function may
+be considered pure if:</p>
+
+<!-- more -->
+
+
+<blockquote><ol>
+<li>The function always evaluates the same result value given the same argument value(s). The function result value cannot depend on any hidden information or state that may change as program execution proceeds or between different executions of the program, nor can it depend on any external input from I/O devices.</li>
+<li>Evaluation of the result does not cause any semantically observable side effect or output, such as mutation of mutable objects or output to I/O devices.</li>
+</ol>
+</blockquote>
+
+<p>It may be difficult to build these kind of functions, it forces us to think
+differently. Having a pure function doing our logic means that we are forced
+to abstract from gateways, storages, and all kind of foreign dependencies.</p>
+
+<p>However, building these pure functions yields several advantages:</p>
+
+<ul>
+<li>The function code is cleaner and easier to understand</li>
+<li>It&rsquo;s easier to test; no dependecies, just focus on the logic</li>
+<li>Because we don&rsquo;t have dependencies, we don&rsquo;t need mocks while testing</li>
+<li>Pure functions can be easilly run on other threads, without worrying about
+sync mechanisms</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Spotify culture]]></title>
@@ -137,75 +174,6 @@ fully to another location on the same project, and performing some changes.</p>
 
 <p>Some may argue that using this process is faster. I disagree. And I hope I&rsquo;ll never
 have to support code from these guys.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The almighty interactor]]></title>
-    <link href="http://www.riot-control.net/2013/12/03/the-almighty-interactor/"/>
-    <updated>2013-12-03T13:21:00+00:00</updated>
-    <id>http://www.riot-control.net/2013/12/03/the-almighty-interactor</id>
-    <content type="html"><![CDATA[<p>The concept of the <em>interactor</em> is the biggest breakthrough that I have experienced in my
-evolution as a programmer. It&rsquo;s simple, and it has always been right beside me. But
-I have only acknowledged it when I saw <a href="/2013/10/11/architecture-the-lost-years/">Arquitecthure: the lost years</a>.</p>
-
-<p>The concept is very simple. An interactor is:</p>
-
-<!-- more -->
-
-
-<ul>
-<li>A class that handles business logic</li>
-<li>It solves only one problem</li>
-<li>It has a name in the form of an action: CreatePost, SendEmail, FinalizeDocument</li>
-<li>It does not know anything about persistence (e.g. databases, ORM&rsquo;s)
-and delivery mechanisms (e.g. Sinatra, Rails, CLI)</li>
-<li>It maps directly to an use case, and only one use case</li>
-</ul>
-
-
-<p>An interactor like CreatePost needs to persist stuff. But it cannot know how.
-To do so, it delegates the persistance to another class, a <em>gateway</em>. This gateway
-may be an object that knows the persistence layer, or may be a dummy memory representation.</p>
-
-<p>This separation makes sure that the interactor stays focused on it&rsquo;s task. And remains
-very light. By being a plain ruby object, the interactor doesn&rsquo;t have dependecies
-that will slow it down when running/booting tests.</p>
-
-<p>Here&rsquo;s a small example:</p>
-
-<p>``` ruby
-class AddNumbers</p>
-
-<p>  def initialize(*numbers)</p>
-
-<pre><code>@numbers = numbers || []
-</code></pre>
-
-<p>  end</p>
-
-<p>  def may_run?</p>
-
-<pre><code>true
-</code></pre>
-
-<p>  end</p>
-
-<p>  def run</p>
-
-<pre><code>@numbers.inject(&amp;:+)
-</code></pre>
-
-<p>  end</p>
-
-<p>end
-```</p>
-
-<p>Now the application knows how to add numbers via the <em>AddNumbers</em> class. We can create some
-fast, database and framework independent unit tests. We can run it on <em>irb</em>, on a rake task
-or on an async worker.</p>
-
-<p>We build our application on top of interactors. And so should you.</p>
 ]]></content>
   </entry>
   

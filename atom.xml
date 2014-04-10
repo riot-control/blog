@@ -4,7 +4,7 @@
   <title><![CDATA[Riot Control]]></title>
   <link href="http://www.riot-control.net/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-04-09T11:26:27+01:00</updated>
+  <updated>2014-04-10T10:08:15+01:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Pure functions]]></title>
+    <link href="http://www.riot-control.net/2014/04/10/pure-functions/"/>
+    <updated>2014-04-10T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/10/pure-functions</id>
+    <content type="html"><![CDATA[<p>While learning scala/clojure and functional programming I have come across a
+very familiar concept: <a href="http://en.wikipedia.org/wiki/Pure_function">pure functions</a>.
+It reminds me of an <a href="http://www.riot-control.net/2013/12/03/the-almighty-interactor/">interactor</a>, but I
+feel that is much more valuable as a concept. The <em>wikipedia</em> says that a function may
+be considered pure if:</p>
+
+<!-- more -->
+
+
+<blockquote><ol>
+<li>The function always evaluates the same result value given the same argument value(s). The function result value cannot depend on any hidden information or state that may change as program execution proceeds or between different executions of the program, nor can it depend on any external input from I/O devices.</li>
+<li>Evaluation of the result does not cause any semantically observable side effect or output, such as mutation of mutable objects or output to I/O devices.</li>
+</ol>
+</blockquote>
+
+<p>It may be difficult to build these kind of functions, it forces us to think
+differently. Having a pure function doing our logic means that we are forced
+to abstract from gateways, storages, and all kind of foreign dependencies.</p>
+
+<p>However, building these pure functions yields several advantages:</p>
+
+<ul>
+<li>The function code is cleaner and easier to understand</li>
+<li>It&rsquo;s easier to test; no dependecies, just focus on the logic</li>
+<li>Because we don&rsquo;t have dependencies, we don&rsquo;t need mocks while testing</li>
+<li>Pure functions can be easilly run on other threads, without worrying about
+sync mechanisms</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Spotify culture]]></title>

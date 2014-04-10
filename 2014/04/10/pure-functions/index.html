@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Spotify culture - Riot Control</title>
+  <title>Pure functions - Riot Control</title>
   <meta name="author" content="">
 
   
-  <meta name="description" content="Culture matters. We try hard to have a good culture on our team, a culture
-of quality, helping each other, learning and having fun. This video from &hellip;">
+  <meta name="description" content="While learning scala/clojure and functional programming I have come across a
+very familiar concept: pure functions.
+It reminds me of an interactor, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@ of quality, helping each other, learning and having fun. This video from &hellip
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.riot-control.net/2014/04/09/spotify-culture">
+  <link rel="canonical" href="http://www.riot-control.net/2014/04/10/pure-functions">
   <link href="/favicon.ico" rel="icon">
   
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -77,7 +78,7 @@ of quality, helping each other, learning and having fun. This video from &hellip
   
   <header>
     
-      <h1 class="entry-title">Spotify Culture</h1>
+      <h1 class="entry-title">Pure Functions</h1>
     
     
       <p class="meta">
@@ -93,19 +94,41 @@ of quality, helping each other, learning and having fun. This video from &hellip
   
 
 
-<time datetime="2014-04-09T00:00:00+01:00" pubdate data-updated="true">Apr 9<span>th</span>, 2014</time>
+<time datetime="2014-04-10T00:00:00+01:00" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content">Culture matters. We try hard to have a good culture on our team, a culture
-of quality, helping each other, learning and having fun. This video from
-Spotify is a great showcase of a good culture. But the most important thing isn&#8217;t
-their culture, it&#8217;s the continuous effort to improve it.
+<div class="entry-content"><p>While learning scala/clojure and functional programming I have come across a
+very familiar concept: <a href="http://en.wikipedia.org/wiki/Pure_function">pure functions</a>.
+It reminds me of an <a href="/2013/12/03/the-almighty-interactor/">interactor</a>, but I
+feel that is much more valuable as a concept. The <em>wikipedia</em> says that a function may
+be considered pure if:</p>
 
-<iframe src="//player.vimeo.com/video/85490944?byline=0" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/85490944">Spotify Engineering Culture - part 1</a> from <a href="http://vimeo.com/user14023874">Spotify Training &amp; Development</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<!-- more -->
+
+
+<blockquote><ol>
+<li>The function always evaluates the same result value given the same argument value(s). The function result value cannot depend on any hidden information or state that may change as program execution proceeds or between different executions of the program, nor can it depend on any external input from I/O devices.</li>
+<li>Evaluation of the result does not cause any semantically observable side effect or output, such as mutation of mutable objects or output to I/O devices.</li>
+</ol>
+</blockquote>
+
+<p>It may be difficult to build these kind of functions, it forces us to think
+differently. Having a pure function doing our logic means that we are forced
+to abstract from gateways, storages, and all kind of foreign dependencies.</p>
+
+<p>However, building these pure functions yields several advantages:</p>
+
+<ul>
+<li>The function code is cleaner and easier to understand</li>
+<li>It&rsquo;s easier to test; no dependecies, just focus on the logic</li>
+<li>Because we don&rsquo;t have dependencies, we don&rsquo;t need mocks while testing</li>
+<li>Pure functions can be easilly run on other threads, without worrying about
+sync mechanisms</li>
+</ul>
 
 </div>
 
@@ -129,12 +152,12 @@ their culture, it&#8217;s the continuous effort to improve it.
   
 
 
-<time datetime="2014-04-09T00:00:00+01:00" pubdate data-updated="true">Apr 9<span>th</span>, 2014</time>
+<time datetime="2014-04-10T00:00:00+01:00" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/categories/culture/'>culture</a>, <a class='category' href='/categories/software-development/'>software development</a>
+    <a class='category' href='/categories/software-development/'>software development</a>
   
 </span>
 
@@ -143,7 +166,7 @@ their culture, it&#8217;s the continuous effort to improve it.
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.riot-control.net/2014/04/09/spotify-culture/" data-via="" data-counturl="http://www.riot-control.net/2014/04/09/spotify-culture/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.riot-control.net/2014/04/10/pure-functions/" data-via="" data-counturl="http://www.riot-control.net/2014/04/10/pure-functions/" >Tweet</a>
   
   
   
@@ -152,10 +175,8 @@ their culture, it&#8217;s the continuous effort to improve it.
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/2014/04/03/practical-object-oriented-design-in-ruby/" title="Previous Post: Practical Object-Oriented Design in Ruby">&laquo; Practical Object-Oriented Design in Ruby</a>
+        <a class="basic-alignment left" href="/2014/04/09/spotify-culture/" title="Previous Post: Spotify culture">&laquo; Spotify culture</a>
       
-      
-        <a class="basic-alignment right" href="/2014/04/10/pure-functions/" title="next Post: Pure functions">Pure functions &raquo;</a>
       
     </p>
   </footer>
@@ -185,8 +206,8 @@ their culture, it&#8217;s the continuous effort to improve it.
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://www.riot-control.net/2014/04/09/spotify-culture/';
-        var disqus_url = 'http://www.riot-control.net/2014/04/09/spotify-culture/';
+        var disqus_identifier = 'http://www.riot-control.net/2014/04/10/pure-functions/';
+        var disqus_url = 'http://www.riot-control.net/2014/04/10/pure-functions/';
         var disqus_script = 'embed.js';
       
     (function () {
