@@ -5,7 +5,7 @@ author: Paulo Silva
 title: "REWORK &amp; REMOTE: Office Not Required"
 date: 2014-04-21 21:01
 comments: true
-categories: [Work, Remote, Culture]
+categories: [work, remote, culture]
 ---
 
 <p>
