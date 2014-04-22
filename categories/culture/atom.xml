@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Culture | Riot Control]]></title>
+  <title><![CDATA[Category: culture | Riot Control]]></title>
   <link href="http://www.riot-control.net/categories/culture/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-04-22T15:32:00+01:00</updated>
+  <updated>2014-04-22T15:49:38+01:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -63,6 +63,23 @@ REWORK focuses on how you can become a better worker. REMOTE is all about workin
 
 
 <blockquote><p><strong>&ldquo;The big transition with distributed workforce is going from synchronous to asynchronous collaboration. Not only do we not have to be in the same spot to work together, we also don’t have to work at the same time to work together.&rdquo; &ndash; Jason Fried &amp; David Heinemeier Hansson</strong></p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Spotify culture]]></title>
+    <link href="http://www.riot-control.net/2014/04/09/spotify-culture/"/>
+    <updated>2014-04-09T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/09/spotify-culture</id>
+    <content type="html"><![CDATA[<p>Culture matters. We try hard to have a good culture on our team, a culture
+of quality, helping each other, learning and having fun. This video from
+Spotify is a great showcase of a good culture. But the most important thing isn&rsquo;t
+their culture, it&rsquo;s the continuous effort to improve it.</p>
+
+<iframe src="http://www.riot-control.net//player.vimeo.com/video/85490944?byline=0" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/85490944">Spotify Engineering Culture &ndash; part 1</a> from <a href="http://vimeo.com/user14023874">Spotify Training &amp; Development</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
 ]]></content>
   </entry>
   
