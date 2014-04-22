@@ -35,7 +35,7 @@ Since I'm talking about the office, how about working from 9am-5pm? I mean, we'r
 
 Now, how about having flexible workdays outside the office? Most managers will come up with this excuse: "If I can’t see them, how do I know they’re working?". **Remote work is all about trust**. Treat your employees like adults and you’ll be the manager. Treat them like children and you’ll be the babysitter. Some managers trust their employees, others like to control them.
 
-**"To successfully work with other people, you have to trust each other. A big part of this is trusting people to get their work done wherever they are, without supervision." - Richard Branson**
+> **"To successfully work with other people, you have to trust each other. A big part of this is trusting people to get their work done wherever they are, without supervision." - Richard Branson**
 
 Another excuse managers come up with to avoid remote work is: "People’s homes are full of distractions". Yes they are. And so are offices. The difference? At home you have **voluntary distractions**. It's up to you to stop working and go watch TV. If you’re tempted by home distractions, maybe your work isn’t motivating and meaningful. On the other hand, at the office you have **involuntary distractions** (coworkers, managers, meetings, etc.).
 
@@ -47,4 +47,4 @@ Let's sum it up:
 * Focus on the work, not the clock
 * Beware of the M&M's
 
-**"The big transition with distributed workforce is going from synchronous to asynchronous collaboration. Not only do we not have to be in the same spot to work together, we also don’t have to work at the same time to work together." - Jason Fried & David Heinemeier Hansson**
+> **"The big transition with distributed workforce is going from synchronous to asynchronous collaboration. Not only do we not have to be in the same spot to work together, we also don’t have to work at the same time to work together." - Jason Fried & David Heinemeier Hansson**
