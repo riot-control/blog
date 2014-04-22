@@ -4,7 +4,7 @@
   <title><![CDATA[Category: software development | Riot Control]]></title>
   <link href="http://www.riot-control.net/categories/software-development/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-04-22T15:49:38+01:00</updated>
+  <updated>2014-04-22T17:02:24+01:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Framework for Hapiness]]></title>
+    <link href="http://www.riot-control.net/2014/04/22/framework-for-hapiness/"/>
+    <updated>2014-04-22T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/22/framework-for-hapiness</id>
+    <content type="html"><![CDATA[<p>Happiness matters. In this talk we are presented with Github&rsquo;s vision for happiness
+in the workplace. It&rsquo;s hard to achieve a lot of those steps, specially when we
+have managers and we don&rsquo;t see eye to eye. But that won&rsquo;t stop me from trying.</p>
+
+<p>
+<div class="ratio-4-3 embed-video-container" onclick="var myAnchor = document.getElementById('i0FzgvYxdvk');var tmpDiv = document.createElement('div');tmpDiv.innerHTML = '&lt;iframe style=&quot;vertical-align:top;width:100%;height:100%;position:absolute;&quot; src=&quot;http://www.youtube.com/embed/i0FzgvYxdvk?autoplay=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;';myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);return false;" title="click here to play">
+<a class="youtube-lazy-link" style="width:100%;height:100%;background:#000 url(http://i2.ytimg.com/vi/i0FzgvYxdvk/0.jpg) center center no-repeat;background-size:contain;position:absolute" href="http://www.youtube.com/watch?v=i0FzgvYxdvk" id="i0FzgvYxdvk" onclick="return false;">
+<div class="youtube-lazy-link-div"></div>
+<div class="youtube-lazy-link-info">Tom Preston-Werner - Framework For Happiness - La Conf Paris 2013</div>
+</a>
+<div class="video-info" ></div>
+</div>
+
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Pure functions]]></title>
@@ -147,33 +169,6 @@ only for views/presenters, but for all code.</p>
 </div>
 
 </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Development by copy paste]]></title>
-    <link href="http://www.riot-control.net/2013/12/18/development-by-copy-paste/"/>
-    <updated>2013-12-18T13:21:00+00:00</updated>
-    <id>http://www.riot-control.net/2013/12/18/development-by-copy-paste</id>
-    <content type="html"><![CDATA[<p>I believe that <em>development by copy paste</em> is the worst work process that a programmer
-may have. I&rsquo;m talking about having a piece of software working, and copying it
-fully to another location on the same project, and performing some changes.</p>
-
-<!-- more -->
-
-
-<p> I may write some poor code if I&rsquo;m tired or in a rush. My compromise is that a
- piece of code may be poorly written, but there is only one point of access. It
- may be refactored later and unit tested later. And all the code that uses the bad one
- won&rsquo;t need to be changed (hopefully :).</p>
-
-<p> When we copy paste large portions of code, we are creating a maintenance hell.
- No longer will we be able to change something in just one place. We&rsquo;ll have to find
- all related places to change that. And guess what? We will always miss the majority
- of them.</p>
-
-<p>Some may argue that using this process is faster. I disagree. And I hope I&rsquo;ll never
-have to support code from these guys.</p>
 ]]></content>
   </entry>
   
