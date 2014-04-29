@@ -86,7 +86,7 @@ def finalizeInvoice(draftId) {
     val draft = loadDraft(draftId)
     val previous = loadPrevious
 
-    val finalized = finalize(draft, previous)
+    val finalized = finalize(draft, Some(previous))
 
     saveDocument(finalized)
   }
