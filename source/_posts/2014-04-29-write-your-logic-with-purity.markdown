@@ -69,7 +69,7 @@ def finalize(draft:Document, previous:Option[Document]) = {
 ```
 
 Using functional programming in scala, we could split all this and build the
-`finalize` function as a compositions of the other inner functions. All these
+`finalize` function as a composition of the other inner functions. All these
 inner functions are also pure an can be unit tested on the side. This is a very
 nice way to have independent, easily tested logic.
 
@@ -97,3 +97,4 @@ This is a better way. We can have all the logic tested and on a module that
 doesn't depend on ORMs, web frameworks, etc. And we can have another module
 that puts everything together. I believe that this is the best approach for
 building software and it's great for TDD.
+
