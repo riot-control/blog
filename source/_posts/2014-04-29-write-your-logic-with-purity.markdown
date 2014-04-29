@@ -41,15 +41,16 @@ end
 
 <!-- more -->
 
-This is all coupled with persistence. It loads models from a gateway and it
-saves them to the gateway. But having the gateway concept we can manage to test
-this in memory. But do we need the gateway to test this logic? How can we have
-this without all that extra noise?
+A gateway object is used as an indirection to load and persist the required data,
+and having this indirection enables us to test the interactor using memory objects,
+instead of hitting the database. We are not coupled with a particular form of
+persistence, but we are still coupled with the persistence operations. Do we
+really need this? Or is it possible to remove the use of the gateway altogether?
 
 A _pure function_ doesn't mutate objects, and doesn't do IO. Our current version
 relies heavily on mutating and IO. Using a pure function feels like improving
-the code, but doesn't seam possible on this scenario. I had to reset my way
-of thinking to reach something that at this moment seams logical.
+the code, but it doesn't seems possible on this scenario. I had to reset my way
+of thinking to reach something that, at this moment, seems logical.
 
 The turning point was when I started to say things differently. I don't want
 a function that finalizes an invoice. I want a function that when given a
