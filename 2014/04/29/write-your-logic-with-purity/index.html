@@ -221,7 +221,7 @@ functionality.</p>
 </span><span class='line'>    <span class="k">val</span> <span class="n">draft</span> <span class="k">=</span> <span class="n">loadDraft</span><span class="o">(</span><span class="n">draftId</span><span class="o">)</span>
 </span><span class='line'>    <span class="k">val</span> <span class="n">previous</span> <span class="k">=</span> <span class="n">loadPrevious</span>
 </span><span class='line'>
-</span><span class='line'>    <span class="k">val</span> <span class="n">finalized</span> <span class="k">=</span> <span class="n">finalize</span><span class="o">(</span><span class="n">draft</span><span class="o">,</span> <span class="n">previous</span><span class="o">)</span>
+</span><span class='line'>    <span class="k">val</span> <span class="n">finalized</span> <span class="k">=</span> <span class="n">finalize</span><span class="o">(</span><span class="n">draft</span><span class="o">,</span> <span class="nc">Some</span><span class="o">(</span><span class="n">previous</span><span class="o">))</span>
 </span><span class='line'>
 </span><span class='line'>    <span class="n">saveDocument</span><span class="o">(</span><span class="n">finalized</span><span class="o">)</span>
 </span><span class='line'>  <span class="o">}</span>

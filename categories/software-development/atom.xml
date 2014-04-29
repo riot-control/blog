@@ -4,7 +4,7 @@
   <title><![CDATA[Category: software development | Riot Control]]></title>
   <link href="http://www.riot-control.net/categories/software-development/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-04-29T15:49:16+01:00</updated>
+  <updated>2014-04-29T19:18:01+01:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -102,7 +102,7 @@ def finalizeInvoice(draftId) {
 <pre><code>val draft = loadDraft(draftId)
 val previous = loadPrevious
 
-val finalized = finalize(draft, previous)
+val finalized = finalize(draft, Some(previous))
 
 saveDocument(finalized)
 </code></pre>
