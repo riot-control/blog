@@ -4,7 +4,7 @@
   <title><![CDATA[Riot Control]]></title>
   <link href="http://www.riot-control.net/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-04-29T15:42:51+01:00</updated>
+  <updated>2014-04-29T15:49:16+01:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,146 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Write your logic with purity]]></title>
+    <link href="http://www.riot-control.net/2014/04/29/write-your-logic-with-purity/"/>
+    <updated>2014-04-29T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/29/write-your-logic-with-purity</id>
+    <content type="html"><![CDATA[<p>When I first learned about <a href="http://www.riot-control.net/2014/04/10/pure-functions/">pure functions</a>
+I tried to map the concept to a core piece of logic on our product. It was hard,
+and I spent some days figuring it out. The test functionality is an invoice
+finalizer. We first had all that logic on the fat models, and then we refactored
+it to <a href="http://www.riot-control.net/2013/12/03/the-almighty-interactor/">interactors</a>
+and it was a huge improvement. Even so, all the <em>gateway</em> logic and such, seamed
+like an unnecessary burden. This functionality, in ruby, is something like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">FinalizeDocument</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kp">attr_accessor</span> <span class="ss">:document</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">run</span>
+</span><span class='line'>    <span class="n">lock</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">sequence</span> <span class="o">=</span> <span class="n">find_sequence</span>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">number</span> <span class="o">=</span> <span class="n">increment</span><span class="p">(</span><span class="n">sequence</span><span class="o">.</span><span class="n">last_document</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">validate_document</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="s1">&#39;final&#39;</span>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">final_date</span> <span class="o">=</span> <span class="no">Time</span><span class="o">.</span><span class="n">now</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">calculate_totals</span>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">sign_and_do_crypto_things</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">save!</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- more -->
+
+
+<p>A gateway object is used as an indirection to load and persist the required data,
+and having this indirection enables us to test the interactor using memory objects,
+instead of hitting the database. We are not coupled with a particular form of
+persistence, but we are still coupled with the persistence operations. Do we
+really need this? Or is it possible to remove the use of the gateway altogether?</p>
+
+<p>A <em>pure function</em> doesn&rsquo;t mutate objects, and doesn&rsquo;t do IO. Our current version
+relies heavily on mutating and IO. Using a pure function feels like improving
+the code, but it doesn&rsquo;t seems possible on this scenario. I had to reset my way
+of thinking to reach something that, at this moment, seems logical.</p>
+
+<p>The turning point was when I started to say things differently. I don&rsquo;t want
+a function that finalizes an invoice. I want a function that when given a
+draft invoice, returns a version of that invoice as finalized. On scala, it
+could be something like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">Document</span><span class="o">(</span><span class="n">number</span> <span class="k">:</span> <span class="kt">Int</span><span class="o">,</span> <span class="n">status</span> <span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="o">...)</span>
+</span><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">DocumentItem</span><span class="o">(</span><span class="n">unitPrice</span> <span class="k">:</span> <span class="kt">Double</span><span class="o">,</span> <span class="n">quantity</span> <span class="k">:</span> <span class="kt">Int</span><span class="o">,</span> <span class="o">...)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="n">finalize</span><span class="o">(</span><span class="n">draft</span><span class="k">:</span><span class="kt">Document</span><span class="o">,</span> <span class="n">previous</span><span class="k">:</span><span class="kt">Option</span><span class="o">[</span><span class="kt">Document</span><span class="o">])</span> <span class="k">=</span> <span class="o">{</span>
+</span><span class='line'>  <span class="k">val</span> <span class="n">v1</span> <span class="k">=</span> <span class="n">buildSequence</span><span class="o">(</span><span class="n">draft</span><span class="o">,</span> <span class="n">previous</span><span class="o">)</span>
+</span><span class='line'>  <span class="k">val</span> <span class="n">v2</span> <span class="k">=</span> <span class="n">calculateTotals</span><span class="o">(</span><span class="n">v1</span><span class="o">)</span>
+</span><span class='line'>  <span class="n">signData</span><span class="o">(</span><span class="n">v2</span><span class="o">)</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Using functional programming in scala, we could split all this and build the
+<code>finalize</code> function as a composition of the other inner functions. All these
+inner functions are also pure an can be unit tested on the side. This is a very
+nice way to have independent, easily tested logic.</p>
+
+<p>However, we have the logic, but still don&rsquo;t have the functionality. We aren&rsquo;t
+persisting anything, so this function doesn&rsquo;t provide us with the side effects
+that we want. The thing is, a program can&rsquo;t be solely composed of pure functions,
+or else it wouldn&rsquo;t do anything useful. We can however, use our simple and
+easily tested pure function that finalizes a document to implement this
+functionality.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">def</span> <span class="n">finalizeInvoice</span><span class="o">(</span><span class="n">draftId</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>  <span class="n">lock</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">val</span> <span class="n">draft</span> <span class="k">=</span> <span class="n">loadDraft</span><span class="o">(</span><span class="n">draftId</span><span class="o">)</span>
+</span><span class='line'>    <span class="k">val</span> <span class="n">previous</span> <span class="k">=</span> <span class="n">loadPrevious</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">val</span> <span class="n">finalized</span> <span class="k">=</span> <span class="n">finalize</span><span class="o">(</span><span class="n">draft</span><span class="o">,</span> <span class="n">previous</span><span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">saveDocument</span><span class="o">(</span><span class="n">finalized</span><span class="o">)</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is a better way. We can have all the logic tested and on a module that
+doesn&rsquo;t depend on ORMs, web frameworks, etc. And we can have another module
+that puts everything together. I believe that this is the best approach for
+building software and it&rsquo;s great for TDD.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[What it takes to be a great leader?]]></title>

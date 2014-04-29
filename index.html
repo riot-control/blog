@@ -9,9 +9,9 @@
   <meta name="author" content="">
 
   
-  <meta name="description" content="Interesting view on leadership. Where are you looking to anticipate change?
-What is the diversity measure of your network?
-Are you courageous enough &hellip;">
+  <meta name="description" content="When I first learned about pure functions
+I tried to map the concept to a core piece of logic on our product. It was hard,
+and I spent some days &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,100 @@ Are you courageous enough &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/04/29/write-your-logic-with-purity/">Write Your Logic With Purity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-29T00:00:00+01:00" pubdate data-updated="true">Apr 29<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When I first learned about <a href="http://www.riot-control.net/2014/04/10/pure-functions/">pure functions</a>
+I tried to map the concept to a core piece of logic on our product. It was hard,
+and I spent some days figuring it out. The test functionality is an invoice
+finalizer. We first had all that logic on the fat models, and then we refactored
+it to <a href="/2013/12/03/the-almighty-interactor/">interactors</a>
+and it was a huge improvement. Even so, all the <em>gateway</em> logic and such, seamed
+like an unnecessary burden. This functionality, in ruby, is something like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">FinalizeDocument</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kp">attr_accessor</span> <span class="ss">:document</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">run</span>
+</span><span class='line'>    <span class="n">lock</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">sequence</span> <span class="o">=</span> <span class="n">find_sequence</span>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">number</span> <span class="o">=</span> <span class="n">increment</span><span class="p">(</span><span class="n">sequence</span><span class="o">.</span><span class="n">last_document</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">validate_document</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="s1">&#39;final&#39;</span>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">final_date</span> <span class="o">=</span> <span class="no">Time</span><span class="o">.</span><span class="n">now</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">calculate_totals</span>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">sign_and_do_crypto_things</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">document</span><span class="o">.</span><span class="n">save!</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2014/04/29/write-your-logic-with-purity/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -495,55 +589,6 @@ fully to another location on the same project, and performing some changes.</p>
     <footer>
       <a rel="full-article" href="/2013/12/18/development-by-copy-paste/">Read on &rarr;</a>
     </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/12/09/why-work-doesnt-happen-at-work/">Why Work Doesn&#8217;t Happen at Work</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-09T12:11:00+00:00" pubdate data-updated="true">Dec 9<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Most people still think that the office is the best place to get work done. They think that a bunch of people need to be in the same room for great things to happen. Well, let me tell you that the office is full of distractions. In this short video, Jason Fried will tell you why work doesn’t happen at work. I guarantee you that these will be the best 15 minutes of your day. Enjoy!</p>
-
-<div class="ratio-4-3 embed-video-container" onclick="var myAnchor = document.getElementById('5XD2kNopsUs');var tmpDiv = document.createElement('div');tmpDiv.innerHTML = '&lt;iframe style=&quot;vertical-align:top;width:100%;height:100%;position:absolute;&quot; src=&quot;http://www.youtube.com/embed/5XD2kNopsUs?autoplay=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;';myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);return false;" title="click here to play">
-<a class="youtube-lazy-link" style="width:100%;height:100%;background:#000 url(http://i2.ytimg.com/vi/5XD2kNopsUs/0.jpg) center center no-repeat;background-size:contain;position:absolute" href="http://www.youtube.com/watch?v=5XD2kNopsUs" id="5XD2kNopsUs" onclick="return false;">
-<div class="youtube-lazy-link-div"></div>
-<div class="youtube-lazy-link-info">Jason Fried: Why work doesn&#8217;t happen at work</div>
-</a>
-<div class="video-info" >http://www.ted.com Jason Fried has a radical theory of working: that the office isn&#8217;t a good place to do it. At TEDxMidwest he lays out the main problems (call them the M&Ms) and offers three suggestions to make work work.
-
-TEDTalks is a daily video podcast of the best talks and performances from the TED Conference, where the world&#8217;s leading thinkers and doers give the talk of their lives in 18 minutes. Featured speakers have included Al Gore on climate change, Philippe Starck on design, Jill Bolte Taylor on observing her own stroke, Nicholas Negroponte on One Laptop per Child, Jane Goodall on chimpanzees, Bill Gates on malaria and mosquitoes, Pattie Maes on the &#8220;Sixth Sense&#8221; wearable tech, and &#8220;Lost&#8221; producer JJ Abrams on the allure of mystery. TED stands for Technology, Entertainment, Design, and TEDTalks cover these topics as well as science, business, development and the arts. Closed captions and translated subtitles in a variety of languages are now available on TED.com, at http://www.ted.com/translate. Watch a highlight reel of the Top 10 TEDTalks at http://www.ted.com/index.php/talks/top10</div>
-</div>
-
-
-
-</div>
-  
   
 
 
