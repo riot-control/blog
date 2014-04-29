@@ -70,13 +70,13 @@ def finalize(draft:Document, previous:Option[Document]) = {
 Using functional programming in scala, we could split all this and build the
 `finalize` function as a compositions of the other inner functions. All these
 inner functions are also pure an can be unit tested on the side. This is a very
-nice way to have independent, easilly tested logic.
+nice way to have independent, easily tested logic.
 
 However, we have the logic, but still don't have the functionality. We aren't
 persisting anything, so this function doesn't provide us with the side effects
-that we want. The thing is, a program can't be solely compoesed of pure functions,
-or else it wouldn't do anything usefull. We can however, use our simple and
-easilly tested pure function that finalizes a document to implement this
+that we want. The thing is, a program can't be solely composed of pure functions,
+or else it wouldn't do anything useful. We can however, use our simple and
+easily tested pure function that finalizes a document to implement this
 functionality.
 
 ``` scala
