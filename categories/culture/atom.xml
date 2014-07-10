@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: culture | Riot Control]]></title>
+  <title><![CDATA[Category: culture | Riot Control (test)]]></title>
   <link href="http://www.riot-control.net/categories/culture/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/"/>
-  <updated>2014-05-30T17:09:18+01:00</updated>
+  <updated>2014-07-10T15:37:12+01:00</updated>
   <id>http://www.riot-control.net/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -129,7 +129,7 @@ of quality, helping each other, learning and having fun. This video from
 Spotify is a great showcase of a good culture. But the most important thing isn&rsquo;t
 their culture, it&rsquo;s the continuous effort to improve it.</p>
 
-<iframe src="http://www.riot-control.net//player.vimeo.com/video/85490944?byline=0" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="http://player.vimeo.com/video/85490944?byline=0" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 <p> <p><a href="http://vimeo.com/85490944">Spotify Engineering Culture &ndash; part 1</a> from <a href="http://vimeo.com/user14023874">Spotify Training &amp; Development</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
