@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Practical Object-Oriented Design in Ruby - Riot Control</title>
+  <meta name="author" content="">
+
+  
+  <meta name="description" content="Pratical Object-Oriented Design in Ruby by Sandi Metz This is one of my favorite Ruby books ever. It is very well written and a joy to read. I highly &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby">
+  <link href="/blog/favicon.ico" rel="icon">
+  
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="Riot Control" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-45179678-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <h1>Riot Control</h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.riot-control.net" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/blog/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Practical Object-Oriented Design in Ruby</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-03T13:25:00+01:00" pubdate data-updated="true">Apr 3<span>rd</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Pratical Object-Oriented Design in Ruby by Sandi Metz</p>
+
+<p><img src="/blog/images/poodr.jpeg" height="300px" width="200px"/></p>
+
+<p>This is one of my favorite Ruby books ever. It is very well written and a joy to read. I highly recommend this book.</p>
+
+<p>So, why is software design so important?</p>
+
+<p>When starting a new software application you have certain requirements. You analise these requirements, build your software and it works. As time goes by, those requirements will change and you will need to refactor your code. If you have a good design architecture, with loosely coupled classes, refactoring your code to meet the new requirements is easy. Otherwise, it will be very painful to make changes.</p>
+
+<!-- more -->
+
+
+<p>Software applications that are easy to change have these qualities:</p>
+
+<ul>
+<li><p><strong>Transparent</strong> &ndash; The consequences of change should be obvious in the code that is changing and in distant code that relies upon it.</p></li>
+<li><p><strong>Reasonable</strong> &ndash; The cost of any change should be proportional to the benefits the change achieves.</p></li>
+<li><p><strong>Usable</strong> &ndash; Existing code should be usable in new and unexpected contexts.</p></li>
+<li><p><strong>Exemplary</strong> &ndash; The code itself should encourage those who change it to perpetuate
+these qualities.</p></li>
+</ul>
+
+
+<p>Tests are another important aspect of well designed software. You can only refactor your code with confidence if you have tests. They also reduce the cost of maintaining your application and they supply valuable documentation.</p>
+
+<p>&ldquo;An understanding of object-oriented design, good refactoring skills, and the ability to write efficient tests form a three-legged stool upon which changeable code rests. Well-designed code is easy to change, refactoring is how you change from one design to the next, and tests free you to refactor with impunity.&rdquo; &ndash; Sandi Metz</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn"><a href="/blog/about" title="About the author (Paulo Silva)" rel="author">Paulo Silva</a></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-03T13:25:00+01:00" pubdate data-updated="true">Apr 3<span>rd</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/software-design/'>software design</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby/" data-via="" data-counturl="http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/02/14/objects-on-rails/" title="Previous Post: Objects on Rails Book">&laquo; Objects on Rails Book</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/04/09/spotify-culture/" title="next Post: Spotify culture">Spotify culture &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 -  -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'riot-control';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby/';
+        var disqus_url = 'http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

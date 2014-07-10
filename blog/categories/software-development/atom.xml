@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: software development | Riot Control]]></title>
+  <link href="http://www.riot-control.net/categories/software-development/atom.xml" rel="self"/>
+  <link href="http://www.riot-control.net/"/>
+  <updated>2014-07-10T18:22:32+01:00</updated>
+  <id>http://www.riot-control.net/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Write your logic with purity]]></title>
+    <link href="http://www.riot-control.net/2014/04/29/write-your-logic-with-purity/"/>
+    <updated>2014-04-29T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/29/write-your-logic-with-purity</id>
+    <content type="html"><![CDATA[<p>When I first learned about <a href="http://www.riot-control.net/2014/04/10/pure-functions/">pure functions</a>
+I tried to map the concept to a core piece of logic on our product. It was hard,
+and I spent some days figuring it out. The test functionality is an invoice
+finalizer. We first had all that logic on the fat models, and then we refactored
+it to <a href="/2013/12/03/the-almighty-interactor/">interactors</a>
+and it was a huge improvement. Even so, all the <em>gateway</em> logic and such, seamed
+like an unnecessary burden. This functionality, in ruby, is something like:</p>
+
+<p>``` ruby
+class FinalizeDocument</p>
+
+<p>  attr_accessor :document</p>
+
+<p>  def run</p>
+
+<pre><code>lock do
+  sequence = find_sequence
+  document.number = increment(sequence.last_document)
+  validate_document
+
+  document.status = 'final'
+  document.final_date = Time.now
+
+  document.calculate_totals
+  document.sign_and_do_crypto_things
+
+  document.save!
+end
+</code></pre>
+
+<p>  end</p>
+
+<p>end
+```</p>
+
+<!-- more -->
+
+
+<p>A gateway object is used as an indirection to load and persist the required data,
+and having this indirection enables us to test the interactor using memory objects,
+instead of hitting the database. We are not coupled with a particular form of
+persistence, but we are still coupled with the persistence operations. Do we
+really need this? Or is it possible to remove the use of the gateway altogether?</p>
+
+<p>A <em>pure function</em> doesn&rsquo;t mutate objects, and doesn&rsquo;t do IO. Our current version
+relies heavily on mutating and IO. Using a pure function feels like improving
+the code, but it doesn&rsquo;t seems possible on this scenario. I had to reset my way
+of thinking to reach something that, at this moment, seems logical.</p>
+
+<p>The turning point was when I started to say things differently. I don&rsquo;t want
+a function that finalizes an invoice. I want a function that when given a
+draft invoice, returns a version of that invoice as finalized. On scala, it
+could be something like this:</p>
+
+<p>``` scala
+case class Document(number : Int, status : String, &hellip;)
+case class DocumentItem(unitPrice : Double, quantity : Int, &hellip;)</p>
+
+<p>def finalize(draft:Document, previous:Option[Document]) = {
+  val v1 = buildSequence(draft, previous)
+  val v2 = calculateTotals(v1)
+  signData(v2)
+}
+```</p>
+
+<p>Using functional programming in scala, we could split all this and build the
+<code>finalize</code> function as a composition of the other inner functions. All these
+inner functions are also pure an can be unit tested on the side. This is a very
+nice way to have independent, easily tested logic.</p>
+
+<p>However, we have the logic, but still don&rsquo;t have the functionality. We aren&rsquo;t
+persisting anything, so this function doesn&rsquo;t provide us with the side effects
+that we want. The thing is, a program can&rsquo;t be solely composed of pure functions,
+or else it wouldn&rsquo;t do anything useful. We can however, use our simple and
+easily tested pure function that finalizes a document to implement this
+functionality.</p>
+
+<p>``` scala
+def finalizeInvoice(draftId) {
+  lock {</p>
+
+<pre><code>val draft = loadDraft(draftId)
+val previous = loadPrevious
+
+val finalized = finalize(draft, previous)
+
+saveDocument(finalized)
+</code></pre>
+
+<p>  }
+}
+```</p>
+
+<p>This is a better way. We can have all the logic tested and on a module that
+doesn&rsquo;t depend on ORMs, web frameworks, etc. And we can have another module
+that puts everything together. I believe that this is the best approach for
+building software and it&rsquo;s great for TDD.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Framework for Hapiness]]></title>
+    <link href="http://www.riot-control.net/2014/04/22/framework-for-hapiness/"/>
+    <updated>2014-04-22T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/22/framework-for-hapiness</id>
+    <content type="html"><![CDATA[<p>Happiness matters. In this talk we are presented with Github&rsquo;s vision for happiness
+in the workplace. It&rsquo;s hard to achieve a lot of those steps, specially when we
+have managers and we don&rsquo;t see eye to eye. But that won&rsquo;t stop me from trying.</p>
+
+<p>
+<div class="ratio-4-3 embed-video-container" onclick="var myAnchor = document.getElementById('i0FzgvYxdvk');var tmpDiv = document.createElement('div');tmpDiv.innerHTML = '&lt;iframe style=&quot;vertical-align:top;width:100%;height:100%;position:absolute;&quot; src=&quot;http://www.youtube.com/embed/i0FzgvYxdvk?autoplay=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;';myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);return false;" title="click here to play">
+<a class="youtube-lazy-link" style="width:100%;height:100%;background:#000 url(http://i2.ytimg.com/vi/i0FzgvYxdvk/0.jpg) center center no-repeat;background-size:contain;position:absolute" href="http://www.youtube.com/watch?v=i0FzgvYxdvk" id="i0FzgvYxdvk" onclick="return false;">
+<div class="youtube-lazy-link-div"></div>
+<div class="youtube-lazy-link-info">Tom Preston-Werner - Framework For Happiness - La Conf Paris 2013</div>
+</a>
+<div class="video-info" ></div>
+</div>
+
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pure functions]]></title>
+    <link href="http://www.riot-control.net/2014/04/10/pure-functions/"/>
+    <updated>2014-04-10T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/10/pure-functions</id>
+    <content type="html"><![CDATA[<p>While learning scala/clojure and functional programming I have come across a
+very familiar concept: <a href="http://en.wikipedia.org/wiki/Pure_function">pure functions</a>.
+It reminds me of an <a href="/2013/12/03/the-almighty-interactor/">interactor</a>, but I
+feel that is much more valuable as a concept. The <em>wikipedia</em> says that a function may
+be considered pure if:</p>
+
+<!-- more -->
+
+
+<blockquote><ol>
+<li>The function always evaluates the same result value given the same argument value(s). The function result value cannot depend on any hidden information or state that may change as program execution proceeds or between different executions of the program, nor can it depend on any external input from I/O devices.</li>
+<li>Evaluation of the result does not cause any semantically observable side effect or output, such as mutation of mutable objects or output to I/O devices.</li>
+</ol>
+</blockquote>
+
+<p>It may be difficult to build these kind of functions, it forces us to think
+differently. Having a pure function doing our logic means that we are forced
+to abstract from gateways, storages, and all kind of foreign dependencies.</p>
+
+<p>However, building these pure functions yields several advantages:</p>
+
+<ul>
+<li>The function code is cleaner and easier to understand</li>
+<li>It&rsquo;s easier to test; no dependecies, just focus on the logic</li>
+<li>Because we don&rsquo;t have dependencies, we don&rsquo;t need mocks while testing</li>
+<li>Pure functions can be easilly run on other threads, without worrying about
+sync mechanisms</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Spotify culture]]></title>
+    <link href="http://www.riot-control.net/2014/04/09/spotify-culture/"/>
+    <updated>2014-04-09T00:00:00+01:00</updated>
+    <id>http://www.riot-control.net/2014/04/09/spotify-culture</id>
+    <content type="html"><![CDATA[<p>Culture matters. We try hard to have a good culture on our team, a culture
+of quality, helping each other, learning and having fun. This video from
+Spotify is a great showcase of a good culture. But the most important thing isn&rsquo;t
+their culture, it&rsquo;s the continuous effort to improve it.</p>
+
+<iframe src="http://player.vimeo.com/video/85490944?byline=0" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/85490944">Spotify Engineering Culture &ndash; part 1</a> from <a href="http://vimeo.com/user14023874">Spotify Training &amp; Development</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Objects on Rails Book]]></title>
+    <link href="http://www.riot-control.net/2014/02/14/objects-on-rails/"/>
+    <updated>2014-02-14T13:47:00+00:00</updated>
+    <id>http://www.riot-control.net/2014/02/14/objects-on-rails</id>
+    <content type="html"><![CDATA[<p>Some time ago our team started to write code differently. Inspired by <a href="/2013/10/11/architecture-the-lost-years/">Architecture: The Lost Years</a>,
+we started using <a href="/2013/12/03/the-almighty-interactor/">interactors</a> and <a href="/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters</a>, greatly improving our code base.
+We also started writting <em>rails-free</em> unit tests. It&rsquo;s good to know that <a href="http://devblog.reverb.com/post/70344683203/5-architecture-anti-patterns-and-solutions-for-large">we are not alone on this process</a>.
+The <a href="http://objectsonrails.com/">Objects on Rails book</a> shows a step by step process to build this kind of code.</p>
+
+<!-- more -->
+
+
+<p>I really loved this book. It&rsquo;s more on the rails side than I would like, but it
+still provided an enourmous amount of insights on application development. It&rsquo;s
+also very <em>ruby intensive</em>, and I confess that I prefer code without deep ruby tricks.</p>
+
+<p>I&rsquo;m awalys saying that I don&rsquo;t like to use constants in code. I always like an
+abstraction on top of constants. Imagine that you have:</p>
+
+<p><code>ruby
+PER_PAGE = 10
+</code></p>
+
+<p>And you use the <em>PER_PAGE</em> all over the place. Now if you need to have logic on
+<em>per page</em>, for example, depending on the current user, you&rsquo;ll have to change it
+all over the place. That&rsquo;s why I always do:</p>
+
+<p><code>ruby
+def per_page
+  10
+end
+</code></p>
+
+<p>Objects on Rails made me think about this on a wider scope. This is a code smell:</p>
+
+<p><code>ruby
+doc = Document.find(params[:id])
+</code></p>
+
+<p>I we have this code all over the place, what happens if we need to inject some
+logic on that find? An alternative:</p>
+
+<p>``` ruby
+def find_document(id, finder=Document)
+  finder.find(id)
+end</p>
+
+<p>doc = find_document(params[:id])
+```</p>
+
+<p>This makes the code so much better for so many different reasons&hellip; The author
+goes on step further and makes all ActiveRecord interface private on the models,
+forcing you to write better code.</p>
+
+<p>You can read the book online for free or spend 5$ and have it digital. It&rsquo;s a must
+read!</p>
+]]></content>
+  </entry>
+  
+</feed>
