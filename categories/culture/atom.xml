@@ -4,7 +4,7 @@
   <title><![CDATA[Category: culture | Riot Control]]></title>
   <link href="http://www.riot-control.net/blog/categories/culture/atom.xml" rel="self"/>
   <link href="http://www.riot-control.net/blog/"/>
-  <updated>2014-07-11T20:32:25+01:00</updated>
+  <updated>2014-07-16T10:41:53+01:00</updated>
   <id>http://www.riot-control.net/blog/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Zappos Company Culture]]></title>
+    <link href="http://www.riot-control.net/blog/2014/07/15/zappos-company-culture/"/>
+    <updated>2014-07-15T18:02:00+01:00</updated>
+    <id>http://www.riot-control.net/blog/2014/07/15/zappos-company-culture</id>
+    <content type="html"><![CDATA[<p>Which are your company&rsquo;s core values?</p>
+
+<p>
+<div class="ratio-4-3 embed-video-container" onclick="var myAnchor = document.getElementById('5CcLIPaUz3E');var tmpDiv = document.createElement('div');tmpDiv.innerHTML = '&lt;iframe style=&quot;vertical-align:top;width:100%;height:100%;position:absolute;&quot; src=&quot;http://www.youtube.com/embed/5CcLIPaUz3E?autoplay=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;';myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);return false;" title="click here to play">
+<a class="youtube-lazy-link" style="width:100%;height:100%;background:#000 url(http://i2.ytimg.com/vi/5CcLIPaUz3E/0.jpg) center center no-repeat;background-size:contain;position:absolute" href="http://www.youtube.com/watch?v=5CcLIPaUz3E" id="5CcLIPaUz3E" onclick="return false;">
+<div class="youtube-lazy-link-div"></div>
+<div class="youtube-lazy-link-info">Zappos Company Culture</div>
+</a>
+<div class="video-info" >Producer / Shooter / Editor
+www.nwgallucci.com</div>
+</div>
+
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why good leaders make you feel safe]]></title>
@@ -116,23 +137,6 @@ REWORK focuses on how you can become a better worker. REMOTE is all about workin
 
 
 <blockquote><p><strong>&ldquo;The big transition with distributed workforce is going from synchronous to asynchronous collaboration. Not only do we not have to be in the same spot to work together, we also don’t have to work at the same time to work together.&rdquo; &ndash; Jason Fried &amp; David Heinemeier Hansson</strong></p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Spotify culture]]></title>
-    <link href="http://www.riot-control.net/blog/2014/04/09/spotify-culture/"/>
-    <updated>2014-04-09T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/blog/2014/04/09/spotify-culture</id>
-    <content type="html"><![CDATA[<p>Culture matters. We try hard to have a good culture on our team, a culture
-of quality, helping each other, learning and having fun. This video from
-Spotify is a great showcase of a good culture. But the most important thing isn&rsquo;t
-their culture, it&rsquo;s the continuous effort to improve it.</p>
-
-<iframe src="http://player.vimeo.com/video/85490944?byline=0" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-<p> <p><a href="http://vimeo.com/85490944">Spotify Engineering Culture &ndash; part 1</a> from <a href="http://vimeo.com/user14023874">Spotify Training &amp; Development</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
 ]]></content>
   </entry>
   
