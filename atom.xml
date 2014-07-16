@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Riot Control]]></title>
-  <link href="http://www.riot-control.net/atom.xml" rel="self"/>
-  <link href="http://www.riot-control.net/"/>
-  <updated>2014-07-10T18:22:32+01:00</updated>
-  <id>http://www.riot-control.net/</id>
+  <link href="http://www.riot-control.net/blog/atom.xml" rel="self"/>
+  <link href="http://www.riot-control.net/blog/"/>
+  <updated>2014-07-11T20:32:25+01:00</updated>
+  <id>http://www.riot-control.net/blog/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Why good leaders make you feel safe]]></title>
-    <link href="http://www.riot-control.net/2014/05/23/why-good-leaders-make-you-feel-safe/"/>
+    <link href="http://www.riot-control.net/blog/2014/05/23/why-good-leaders-make-you-feel-safe/"/>
     <updated>2014-05-23T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/05/23/why-good-leaders-make-you-feel-safe</id>
+    <id>http://www.riot-control.net/blog/2014/05/23/why-good-leaders-make-you-feel-safe</id>
     <content type="html"><![CDATA[<p>Do you feel safe?</p>
 
 <iframe src="http://embed.ted.com/talks/simon_sinek_why_good_leaders_make_you_feel_safe.html" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -27,14 +27,14 @@
   
   <entry>
     <title type="html"><![CDATA[Write your logic with purity]]></title>
-    <link href="http://www.riot-control.net/2014/04/29/write-your-logic-with-purity/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/29/write-your-logic-with-purity/"/>
     <updated>2014-04-29T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/29/write-your-logic-with-purity</id>
+    <id>http://www.riot-control.net/blog/2014/04/29/write-your-logic-with-purity</id>
     <content type="html"><![CDATA[<p>When I first learned about <a href="http://www.riot-control.net/2014/04/10/pure-functions/">pure functions</a>
 I tried to map the concept to a core piece of logic on our product. It was hard,
 and I spent some days figuring it out. The test functionality is an invoice
 finalizer. We first had all that logic on the fat models, and then we refactored
-it to <a href="http://www.riot-control.net/2013/12/03/the-almighty-interactor/">interactors</a>
+it to <a href="http://www.riot-control.net/blog/2013/12/03/the-almighty-interactor/">interactors</a>
 and it was a huge improvement. Even so, all the <em>gateway</em> logic and such, seamed
 like an unnecessary burden. This functionality, in ruby, is something like:</p>
 
@@ -167,9 +167,9 @@ building software and it&rsquo;s great for TDD.</p>
   
   <entry>
     <title type="html"><![CDATA[What it takes to be a great leader?]]></title>
-    <link href="http://www.riot-control.net/2014/04/24/what-takes-to-be-a-great-leader/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/24/what-takes-to-be-a-great-leader/"/>
     <updated>2014-04-24T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/24/what-takes-to-be-a-great-leader</id>
+    <id>http://www.riot-control.net/blog/2014/04/24/what-takes-to-be-a-great-leader</id>
     <content type="html"><![CDATA[<p>Interesting view on leadership.</p>
 
 <ul>
@@ -186,9 +186,9 @@ building software and it&rsquo;s great for TDD.</p>
   
   <entry>
     <title type="html"><![CDATA[Framework for Hapiness]]></title>
-    <link href="http://www.riot-control.net/2014/04/22/framework-for-hapiness/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/22/framework-for-hapiness/"/>
     <updated>2014-04-22T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/22/framework-for-hapiness</id>
+    <id>http://www.riot-control.net/blog/2014/04/22/framework-for-hapiness</id>
     <content type="html"><![CDATA[<p>Happiness matters. In this talk we are presented with Github&rsquo;s vision for happiness
 in the workplace. It&rsquo;s hard to achieve a lot of those steps, specially when we
 have managers and we don&rsquo;t see eye to eye. But that won&rsquo;t stop me from trying.</p>
@@ -208,13 +208,13 @@ have managers and we don&rsquo;t see eye to eye. But that won&rsquo;t stop me fr
   
   <entry>
     <title type="html"><![CDATA[REWORK &amp; REMOTE: Office Not Required]]></title>
-    <link href="http://www.riot-control.net/2014/04/21/rework-and-remote/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/21/rework-and-remote/"/>
     <updated>2014-04-21T21:01:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/21/rework-and-remote</id>
+    <id>http://www.riot-control.net/blog/2014/04/21/rework-and-remote</id>
     <content type="html"><![CDATA[<p>
-<img style="border-style:solid;border-color:black;" src="http://www.riot-control.net/images/rework.jpg" height="300px" width="200px"/>
+<img style="border-style:solid;border-color:black;" src="http://www.riot-control.net/blog/images/rework.jpg" height="300px" width="200px"/>
 
-<img style="border-style:solid;border-color:red;" src="http://www.riot-control.net/images/remote.png" height="300px" width="200px"/>
+<img style="border-style:solid;border-color:red;" src="http://www.riot-control.net/blog/images/remote.png" height="300px" width="200px"/>
 </p>
 
 
@@ -261,12 +261,12 @@ REWORK focuses on how you can become a better worker. REMOTE is all about workin
   
   <entry>
     <title type="html"><![CDATA[Pure functions]]></title>
-    <link href="http://www.riot-control.net/2014/04/10/pure-functions/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/10/pure-functions/"/>
     <updated>2014-04-10T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/10/pure-functions</id>
+    <id>http://www.riot-control.net/blog/2014/04/10/pure-functions</id>
     <content type="html"><![CDATA[<p>While learning scala/clojure and functional programming I have come across a
 very familiar concept: <a href="http://en.wikipedia.org/wiki/Pure_function">pure functions</a>.
-It reminds me of an <a href="http://www.riot-control.net/2013/12/03/the-almighty-interactor/">interactor</a>, but I
+It reminds me of an <a href="http://www.riot-control.net/blog/2013/12/03/the-almighty-interactor/">interactor</a>, but I
 feel that is much more valuable as a concept. The <em>wikipedia</em> says that a function may
 be considered pure if:</p>
 
@@ -298,9 +298,9 @@ sync mechanisms</li>
   
   <entry>
     <title type="html"><![CDATA[Spotify culture]]></title>
-    <link href="http://www.riot-control.net/2014/04/09/spotify-culture/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/09/spotify-culture/"/>
     <updated>2014-04-09T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/09/spotify-culture</id>
+    <id>http://www.riot-control.net/blog/2014/04/09/spotify-culture</id>
     <content type="html"><![CDATA[Culture matters. We try hard to have a good culture on our team, a culture
 of quality, helping each other, learning and having fun. This video from
 Spotify is a great showcase of a good culture. But the most important thing isn&#8217;t
@@ -313,12 +313,12 @@ their culture, it&#8217;s the continuous effort to improve it.
   
   <entry>
     <title type="html"><![CDATA[Practical Object-Oriented Design in Ruby]]></title>
-    <link href="http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/03/practical-object-oriented-design-in-ruby/"/>
     <updated>2014-04-03T13:25:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby</id>
+    <id>http://www.riot-control.net/blog/2014/04/03/practical-object-oriented-design-in-ruby</id>
     <content type="html"><![CDATA[<p>Pratical Object-Oriented Design in Ruby by Sandi Metz</p>
 
-<p><img src="http://www.riot-control.net/images/poodr.jpeg" height="300px" width="200px"/></p>
+<p><img src="http://www.riot-control.net/blog/images/poodr.jpeg" height="300px" width="200px"/></p>
 
 <p>This is one of my favorite Ruby books ever. It is very well written and a joy to read. I highly recommend this book.</p>
 
@@ -348,11 +348,11 @@ these qualities.</p></li>
   
   <entry>
     <title type="html"><![CDATA[Objects on Rails Book]]></title>
-    <link href="http://www.riot-control.net/2014/02/14/objects-on-rails/"/>
+    <link href="http://www.riot-control.net/blog/2014/02/14/objects-on-rails/"/>
     <updated>2014-02-14T13:47:00+00:00</updated>
-    <id>http://www.riot-control.net/2014/02/14/objects-on-rails</id>
-    <content type="html"><![CDATA[<p>Some time ago our team started to write code differently. Inspired by <a href="http://www.riot-control.net/2013/10/11/architecture-the-lost-years/">Architecture: The Lost Years</a>,
-we started using <a href="http://www.riot-control.net/2013/12/03/the-almighty-interactor/">interactors</a> and <a href="http://www.riot-control.net/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters</a>, greatly improving our code base.
+    <id>http://www.riot-control.net/blog/2014/02/14/objects-on-rails</id>
+    <content type="html"><![CDATA[<p>Some time ago our team started to write code differently. Inspired by <a href="http://www.riot-control.net/blog/2013/10/11/architecture-the-lost-years/">Architecture: The Lost Years</a>,
+we started using <a href="http://www.riot-control.net/blog/2013/12/03/the-almighty-interactor/">interactors</a> and <a href="http://www.riot-control.net/blog/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters</a>, greatly improving our code base.
 We also started writting <em>rails-free</em> unit tests. It&rsquo;s good to know that <a href="http://devblog.reverb.com/post/70344683203/5-architecture-anti-patterns-and-solutions-for-large">we are not alone on this process</a>.
 The <a href="http://objectsonrails.com/">Objects on Rails book</a> shows a step by step process to build this kind of code.</p>
 
@@ -418,10 +418,10 @@ read!</p>
   
   <entry>
     <title type="html"><![CDATA[Confident code]]></title>
-    <link href="http://www.riot-control.net/2013/12/23/confident-code/"/>
+    <link href="http://www.riot-control.net/blog/2013/12/23/confident-code/"/>
     <updated>2013-12-23T13:47:00+00:00</updated>
-    <id>http://www.riot-control.net/2013/12/23/confident-code</id>
-    <content type="html"><![CDATA[<p>In Paulo&rsquo;s post about <a href="http://www.riot-control.net/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters and views</a>,
+    <id>http://www.riot-control.net/blog/2013/12/23/confident-code</id>
+    <content type="html"><![CDATA[<p>In Paulo&rsquo;s post about <a href="http://www.riot-control.net/blog/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters and views</a>,
 he talked about how to make the view free of business logic. This is
 <em>confident coding</em>. The following <em>talk</em> shows this in a wider perspective. Not
 only for views/presenters, but for all code.</p>
@@ -441,9 +441,9 @@ only for views/presenters, but for all code.</p>
   
   <entry>
     <title type="html"><![CDATA[Development by copy paste]]></title>
-    <link href="http://www.riot-control.net/2013/12/18/development-by-copy-paste/"/>
+    <link href="http://www.riot-control.net/blog/2013/12/18/development-by-copy-paste/"/>
     <updated>2013-12-18T13:21:00+00:00</updated>
-    <id>http://www.riot-control.net/2013/12/18/development-by-copy-paste</id>
+    <id>http://www.riot-control.net/blog/2013/12/18/development-by-copy-paste</id>
     <content type="html"><![CDATA[<p>I believe that <em>development by copy paste</em> is the worst work process that a programmer
 may have. I&rsquo;m talking about having a piece of software working, and copying it
 fully to another location on the same project, and performing some changes.</p>
@@ -468,9 +468,9 @@ have to support code from these guys.</p>
   
   <entry>
     <title type="html"><![CDATA[Why Work Doesn't Happen at Work]]></title>
-    <link href="http://www.riot-control.net/2013/12/09/why-work-doesnt-happen-at-work/"/>
+    <link href="http://www.riot-control.net/blog/2013/12/09/why-work-doesnt-happen-at-work/"/>
     <updated>2013-12-09T12:11:00+00:00</updated>
-    <id>http://www.riot-control.net/2013/12/09/why-work-doesnt-happen-at-work</id>
+    <id>http://www.riot-control.net/blog/2013/12/09/why-work-doesnt-happen-at-work</id>
     <content type="html"><![CDATA[<p>Most people still think that the office is the best place to get work done. They think that a bunch of people need to be in the same room for great things to happen. Well, let me tell you that the office is full of distractions. In this short video, Jason Fried will tell you why work doesn’t happen at work. I guarantee you that these will be the best 15 minutes of your day. Enjoy!</p>
 
 <div class="ratio-4-3 embed-video-container" onclick="var myAnchor = document.getElementById('5XD2kNopsUs');var tmpDiv = document.createElement('div');tmpDiv.innerHTML = '&lt;iframe style=&quot;vertical-align:top;width:100%;height:100%;position:absolute;&quot; src=&quot;http://www.youtube.com/embed/5XD2kNopsUs?autoplay=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;';myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);return false;" title="click here to play">
@@ -490,12 +490,12 @@ TEDTalks is a daily video podcast of the best talks and performances from the TE
   
   <entry>
     <title type="html"><![CDATA[The almighty interactor]]></title>
-    <link href="http://www.riot-control.net/2013/12/03/the-almighty-interactor/"/>
+    <link href="http://www.riot-control.net/blog/2013/12/03/the-almighty-interactor/"/>
     <updated>2013-12-03T13:21:00+00:00</updated>
-    <id>http://www.riot-control.net/2013/12/03/the-almighty-interactor</id>
+    <id>http://www.riot-control.net/blog/2013/12/03/the-almighty-interactor</id>
     <content type="html"><![CDATA[<p>The concept of the <em>interactor</em> is the biggest breakthrough that I have experienced in my
 evolution as a programmer. It&rsquo;s simple, and it has always been right beside me. But
-I have only acknowledged it when I saw <a href="http://www.riot-control.net/2013/10/11/architecture-the-lost-years/">Arquitecthure: the lost years</a>.</p>
+I have only acknowledged it when I saw <a href="http://www.riot-control.net/blog/2013/10/11/architecture-the-lost-years/">Arquitecthure: the lost years</a>.</p>
 
 <p>The concept is very simple. An interactor is:</p>
 
@@ -565,9 +565,9 @@ or on an async worker.</p>
   
   <entry>
     <title type="html"><![CDATA[Refactoring Views with Presenters (Ruby on Rails)]]></title>
-    <link href="http://www.riot-control.net/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/"/>
+    <link href="http://www.riot-control.net/blog/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/"/>
     <updated>2013-11-27T00:00:00+00:00</updated>
-    <id>http://www.riot-control.net/2013/11/27/refactoring-views-with-presenters-ruby-on-rails</id>
+    <id>http://www.riot-control.net/blog/2013/11/27/refactoring-views-with-presenters-ruby-on-rails</id>
     <content type="html"><![CDATA[<p>In a <strong>Ruby on Rails</strong> application, views can get really messy over time. They tend to grow into large files with <strong>if else blocks</strong> scattered all over the place.</p>
 
 <p>Lately I&rsquo;ve been working on an existing application with views like these. My goal was to remove all the logic from the views into <strong>presenters</strong>, making the views smaller, more readable and easier to maintain.</p>
@@ -799,9 +799,9 @@ or on an async worker.</p>
   
   <entry>
     <title type="html"><![CDATA[Architecture: The Lost Years]]></title>
-    <link href="http://www.riot-control.net/2013/10/11/architecture-the-lost-years/"/>
+    <link href="http://www.riot-control.net/blog/2013/10/11/architecture-the-lost-years/"/>
     <updated>2013-10-11T13:47:00+01:00</updated>
-    <id>http://www.riot-control.net/2013/10/11/architecture-the-lost-years</id>
+    <id>http://www.riot-control.net/blog/2013/10/11/architecture-the-lost-years</id>
     <content type="html"><![CDATA[
 
 <div class="ratio-4-3 embed-video-container" onclick="var myAnchor = document.getElementById('WpkDN78P884');var tmpDiv = document.createElement('div');tmpDiv.innerHTML = '&lt;iframe style=&quot;vertical-align:top;width:100%;height:100%;position:absolute;&quot; src=&quot;http://www.youtube.com/embed/WpkDN78P884?autoplay=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;';myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);return false;" title="click here to play">

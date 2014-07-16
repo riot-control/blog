@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: work | Riot Control]]></title>
-  <link href="http://www.riot-control.net/categories/work/atom.xml" rel="self"/>
-  <link href="http://www.riot-control.net/"/>
-  <updated>2014-07-10T18:22:32+01:00</updated>
-  <id>http://www.riot-control.net/</id>
+  <link href="http://www.riot-control.net/blog/categories/work/atom.xml" rel="self"/>
+  <link href="http://www.riot-control.net/blog/"/>
+  <updated>2014-07-11T20:32:25+01:00</updated>
+  <id>http://www.riot-control.net/blog/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[REWORK &amp; REMOTE: Office Not Required]]></title>
-    <link href="http://www.riot-control.net/2014/04/21/rework-and-remote/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/21/rework-and-remote/"/>
     <updated>2014-04-21T21:01:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/21/rework-and-remote</id>
+    <id>http://www.riot-control.net/blog/2014/04/21/rework-and-remote</id>
     <content type="html"><![CDATA[<p>
 <img style="border-style:solid;border-color:black;" src="/images/rework.jpg" height="300px" width="200px"/>
 

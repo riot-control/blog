@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: culture | Riot Control]]></title>
-  <link href="http://www.riot-control.net/categories/culture/atom.xml" rel="self"/>
-  <link href="http://www.riot-control.net/"/>
-  <updated>2014-07-10T18:22:32+01:00</updated>
-  <id>http://www.riot-control.net/</id>
+  <link href="http://www.riot-control.net/blog/categories/culture/atom.xml" rel="self"/>
+  <link href="http://www.riot-control.net/blog/"/>
+  <updated>2014-07-11T20:32:25+01:00</updated>
+  <id>http://www.riot-control.net/blog/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Why good leaders make you feel safe]]></title>
-    <link href="http://www.riot-control.net/2014/05/23/why-good-leaders-make-you-feel-safe/"/>
+    <link href="http://www.riot-control.net/blog/2014/05/23/why-good-leaders-make-you-feel-safe/"/>
     <updated>2014-05-23T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/05/23/why-good-leaders-make-you-feel-safe</id>
+    <id>http://www.riot-control.net/blog/2014/05/23/why-good-leaders-make-you-feel-safe</id>
     <content type="html"><![CDATA[<p>Do you feel safe?</p>
 
 <iframe src="http://embed.ted.com/talks/simon_sinek_why_good_leaders_make_you_feel_safe.html" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -27,9 +27,9 @@
   
   <entry>
     <title type="html"><![CDATA[What it takes to be a great leader?]]></title>
-    <link href="http://www.riot-control.net/2014/04/24/what-takes-to-be-a-great-leader/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/24/what-takes-to-be-a-great-leader/"/>
     <updated>2014-04-24T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/24/what-takes-to-be-a-great-leader</id>
+    <id>http://www.riot-control.net/blog/2014/04/24/what-takes-to-be-a-great-leader</id>
     <content type="html"><![CDATA[<p>Interesting view on leadership.</p>
 
 <ul>
@@ -46,9 +46,9 @@
   
   <entry>
     <title type="html"><![CDATA[Framework for Hapiness]]></title>
-    <link href="http://www.riot-control.net/2014/04/22/framework-for-hapiness/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/22/framework-for-hapiness/"/>
     <updated>2014-04-22T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/22/framework-for-hapiness</id>
+    <id>http://www.riot-control.net/blog/2014/04/22/framework-for-hapiness</id>
     <content type="html"><![CDATA[<p>Happiness matters. In this talk we are presented with Github&rsquo;s vision for happiness
 in the workplace. It&rsquo;s hard to achieve a lot of those steps, specially when we
 have managers and we don&rsquo;t see eye to eye. But that won&rsquo;t stop me from trying.</p>
@@ -68,9 +68,9 @@ have managers and we don&rsquo;t see eye to eye. But that won&rsquo;t stop me fr
   
   <entry>
     <title type="html"><![CDATA[REWORK &amp; REMOTE: Office Not Required]]></title>
-    <link href="http://www.riot-control.net/2014/04/21/rework-and-remote/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/21/rework-and-remote/"/>
     <updated>2014-04-21T21:01:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/21/rework-and-remote</id>
+    <id>http://www.riot-control.net/blog/2014/04/21/rework-and-remote</id>
     <content type="html"><![CDATA[<p>
 <img style="border-style:solid;border-color:black;" src="/images/rework.jpg" height="300px" width="200px"/>
 
@@ -121,9 +121,9 @@ REWORK focuses on how you can become a better worker. REMOTE is all about workin
   
   <entry>
     <title type="html"><![CDATA[Spotify culture]]></title>
-    <link href="http://www.riot-control.net/2014/04/09/spotify-culture/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/09/spotify-culture/"/>
     <updated>2014-04-09T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/09/spotify-culture</id>
+    <id>http://www.riot-control.net/blog/2014/04/09/spotify-culture</id>
     <content type="html"><![CDATA[<p>Culture matters. We try hard to have a good culture on our team, a culture
 of quality, helping each other, learning and having fun. This video from
 Spotify is a great showcase of a good culture. But the most important thing isn&rsquo;t

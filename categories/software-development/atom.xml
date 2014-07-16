@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: software development | Riot Control]]></title>
-  <link href="http://www.riot-control.net/categories/software-development/atom.xml" rel="self"/>
-  <link href="http://www.riot-control.net/"/>
-  <updated>2014-07-10T18:22:32+01:00</updated>
-  <id>http://www.riot-control.net/</id>
+  <link href="http://www.riot-control.net/blog/categories/software-development/atom.xml" rel="self"/>
+  <link href="http://www.riot-control.net/blog/"/>
+  <updated>2014-07-11T20:32:25+01:00</updated>
+  <id>http://www.riot-control.net/blog/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Write your logic with purity]]></title>
-    <link href="http://www.riot-control.net/2014/04/29/write-your-logic-with-purity/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/29/write-your-logic-with-purity/"/>
     <updated>2014-04-29T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/29/write-your-logic-with-purity</id>
+    <id>http://www.riot-control.net/blog/2014/04/29/write-your-logic-with-purity</id>
     <content type="html"><![CDATA[<p>When I first learned about <a href="http://www.riot-control.net/2014/04/10/pure-functions/">pure functions</a>
 I tried to map the concept to a core piece of logic on our product. It was hard,
 and I spent some days figuring it out. The test functionality is an invoice
@@ -120,9 +120,9 @@ building software and it&rsquo;s great for TDD.</p>
   
   <entry>
     <title type="html"><![CDATA[Framework for Hapiness]]></title>
-    <link href="http://www.riot-control.net/2014/04/22/framework-for-hapiness/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/22/framework-for-hapiness/"/>
     <updated>2014-04-22T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/22/framework-for-hapiness</id>
+    <id>http://www.riot-control.net/blog/2014/04/22/framework-for-hapiness</id>
     <content type="html"><![CDATA[<p>Happiness matters. In this talk we are presented with Github&rsquo;s vision for happiness
 in the workplace. It&rsquo;s hard to achieve a lot of those steps, specially when we
 have managers and we don&rsquo;t see eye to eye. But that won&rsquo;t stop me from trying.</p>
@@ -142,9 +142,9 @@ have managers and we don&rsquo;t see eye to eye. But that won&rsquo;t stop me fr
   
   <entry>
     <title type="html"><![CDATA[Pure functions]]></title>
-    <link href="http://www.riot-control.net/2014/04/10/pure-functions/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/10/pure-functions/"/>
     <updated>2014-04-10T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/10/pure-functions</id>
+    <id>http://www.riot-control.net/blog/2014/04/10/pure-functions</id>
     <content type="html"><![CDATA[<p>While learning scala/clojure and functional programming I have come across a
 very familiar concept: <a href="http://en.wikipedia.org/wiki/Pure_function">pure functions</a>.
 It reminds me of an <a href="/2013/12/03/the-almighty-interactor/">interactor</a>, but I
@@ -179,9 +179,9 @@ sync mechanisms</li>
   
   <entry>
     <title type="html"><![CDATA[Spotify culture]]></title>
-    <link href="http://www.riot-control.net/2014/04/09/spotify-culture/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/09/spotify-culture/"/>
     <updated>2014-04-09T00:00:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/09/spotify-culture</id>
+    <id>http://www.riot-control.net/blog/2014/04/09/spotify-culture</id>
     <content type="html"><![CDATA[<p>Culture matters. We try hard to have a good culture on our team, a culture
 of quality, helping each other, learning and having fun. This video from
 Spotify is a great showcase of a good culture. But the most important thing isn&rsquo;t
@@ -196,9 +196,9 @@ their culture, it&rsquo;s the continuous effort to improve it.</p>
   
   <entry>
     <title type="html"><![CDATA[Objects on Rails Book]]></title>
-    <link href="http://www.riot-control.net/2014/02/14/objects-on-rails/"/>
+    <link href="http://www.riot-control.net/blog/2014/02/14/objects-on-rails/"/>
     <updated>2014-02-14T13:47:00+00:00</updated>
-    <id>http://www.riot-control.net/2014/02/14/objects-on-rails</id>
+    <id>http://www.riot-control.net/blog/2014/02/14/objects-on-rails</id>
     <content type="html"><![CDATA[<p>Some time ago our team started to write code differently. Inspired by <a href="/2013/10/11/architecture-the-lost-years/">Architecture: The Lost Years</a>,
 we started using <a href="/2013/12/03/the-almighty-interactor/">interactors</a> and <a href="/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters</a>, greatly improving our code base.
 We also started writting <em>rails-free</em> unit tests. It&rsquo;s good to know that <a href="http://devblog.reverb.com/post/70344683203/5-architecture-anti-patterns-and-solutions-for-large">we are not alone on this process</a>.

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: software design | Riot Control]]></title>
-  <link href="http://www.riot-control.net/categories/software-design/atom.xml" rel="self"/>
-  <link href="http://www.riot-control.net/"/>
-  <updated>2014-07-10T18:22:32+01:00</updated>
-  <id>http://www.riot-control.net/</id>
+  <link href="http://www.riot-control.net/blog/categories/software-design/atom.xml" rel="self"/>
+  <link href="http://www.riot-control.net/blog/"/>
+  <updated>2014-07-11T20:32:25+01:00</updated>
+  <id>http://www.riot-control.net/blog/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Practical Object-Oriented Design in Ruby]]></title>
-    <link href="http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby/"/>
+    <link href="http://www.riot-control.net/blog/2014/04/03/practical-object-oriented-design-in-ruby/"/>
     <updated>2014-04-03T13:25:00+01:00</updated>
-    <id>http://www.riot-control.net/2014/04/03/practical-object-oriented-design-in-ruby</id>
+    <id>http://www.riot-control.net/blog/2014/04/03/practical-object-oriented-design-in-ruby</id>
     <content type="html"><![CDATA[<p>Pratical Object-Oriented Design in Ruby by Sandi Metz</p>
 
 <p><img src="/images/poodr.jpeg" height="300px" width="200px"/></p>

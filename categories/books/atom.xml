@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: books | Riot Control]]></title>
-  <link href="http://www.riot-control.net/categories/books/atom.xml" rel="self"/>
-  <link href="http://www.riot-control.net/"/>
-  <updated>2014-07-10T18:22:32+01:00</updated>
-  <id>http://www.riot-control.net/</id>
+  <link href="http://www.riot-control.net/blog/categories/books/atom.xml" rel="self"/>
+  <link href="http://www.riot-control.net/blog/"/>
+  <updated>2014-07-11T20:32:25+01:00</updated>
+  <id>http://www.riot-control.net/blog/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Objects on Rails Book]]></title>
-    <link href="http://www.riot-control.net/2014/02/14/objects-on-rails/"/>
+    <link href="http://www.riot-control.net/blog/2014/02/14/objects-on-rails/"/>
     <updated>2014-02-14T13:47:00+00:00</updated>
-    <id>http://www.riot-control.net/2014/02/14/objects-on-rails</id>
+    <id>http://www.riot-control.net/blog/2014/02/14/objects-on-rails</id>
     <content type="html"><![CDATA[<p>Some time ago our team started to write code differently. Inspired by <a href="/2013/10/11/architecture-the-lost-years/">Architecture: The Lost Years</a>,
 we started using <a href="/2013/12/03/the-almighty-interactor/">interactors</a> and <a href="/2013/11/27/refactoring-views-with-presenters-ruby-on-rails/">presenters</a>, greatly improving our code base.
 We also started writting <em>rails-free</em> unit tests. It&rsquo;s good to know that <a href="http://devblog.reverb.com/post/70344683203/5-architecture-anti-patterns-and-solutions-for-large">we are not alone on this process</a>.
